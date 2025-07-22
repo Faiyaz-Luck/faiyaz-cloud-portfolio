@@ -4,127 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faiyaz | DevOps Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
     body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f3f3f3;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      animation: fadeIn 1s ease-in;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .animated-text {
-      font-size: 2.5rem;
-      font-weight: bold;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: moveText 5s infinite alternate;
-    }
-
-    @keyframes moveText {
-      0% { letter-spacing: 0px; }
-      100% { letter-spacing: 4px; }
-    }
-
-    .section-card {
-      background-color: rgba(255, 255, 255, 0.05);
+    .section {
+      padding: 60px 20px;
       border-radius: 12px;
-      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.05);
       margin-bottom: 2rem;
     }
 
-    a {
+    h1, h2, h3 {
+      color: #00d4ff;
+      font-weight: 600;
+    }
+
+    .profile-img {
+      width: 160px;
+      border-radius: 50%;
+      border: 4px solid #00d4ff;
+    }
+
+    .contact a {
       color: #4fd1c5;
       text-decoration: none;
     }
 
-    a:hover {
-      color: #00ffd5;
-    }
-
-    .profile-img {
-      width: 150px;
-      border-radius: 50%;
-      border: 3px solid #00d4ff;
-      box-shadow: 0 0 15px #00d4ff;
-    }
-
-    .contact p {
-      margin: 0.2rem 0;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container text-center my-5">
-    <img src="profile.jpg" alt="Abdul Faiyaz" class="profile-img mb-3">
-    <h1 class="animated-text">Abdul Faiyaz</h1>
-    <h4 class="text-info">DevOps Engineer</h4>
-  </div>
-
-  <div class="container">
-    <div class="section-card">
-      <h3>👨‍💻 About Me</h3>
-      <p>I am a passionate DevOps Engineer with hands-on project experience and a strong foundation in automation, cloud, CI/CD, and container orchestration. Coming from a non-IT background, I have reskilled through dedicated learning and real-time projects.</p>
-    </div>
-
-    <div class="section-card">
-      <h3>💼 Projects</h3>
-      <ul>
-        <li><strong>FinanceMe - Banking & Finance Domain CI/CD Project:</strong> <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">GitHub Repo</a></li>
-        <li><strong>DevOps Portfolio Website:</strong> <a href="https://faiyaz-luck.github.io/devops-portfolio/" target="_blank">Live Portfolio</a></li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <h3>📜 Certifications</h3>
-      <ul class="row row-cols-1 row-cols-md-2">
-        <li>DevOps Foundation Course</li>
-        <li>Jenkins CI/CD Mastery</li>
-        <li>Docker & Kubernetes Hands-On</li>
-        <li>Terraform Infrastructure as Code</li>
-        <li>Ansible Configuration Management</li>
-        <li>Agile Course (29/11/24 – 10/03/25)</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <h3>📊 Skills</h3>
-      <ul class="row row-cols-2 row-cols-md-3">
-        <li>Git, GitHub</li>
-        <li>Jenkins, Docker</li>
-        <li>Kubernetes, Helm</li>
-        <li>Ansible, Terraform</li>
-        <li>Linux, Bash</li>
-        <li>AWS, EC2, S3, EKS</li>
-        <li>Monitoring: Prometheus, Grafana</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <h3>🧑‍💼 Work Experience (Non-IT)</h3>
-      <ul>
-        <li><strong>Concentrix Technologies</strong> – Networking Agent (2016–2019)</li>
-        <li><strong>WNS</strong> – Senior Operations Associate</li>
-        <li><strong>CaratLane</strong> – Jewellery Expert</li>
-      </ul>
-      <p>I transitioned into the DevOps field with dedicated learning and real-time project implementation.</p>
-    </div>
-
-    <div class="section-card contact">
-      <h3>📬 Contact</h3>
-      <p>Email: abdulfaiyaz.shukor@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/abdul-faiyaz-a5453a18b/" target="_blank">abdul-faiyaz-a5453a18b</a></p>
-      <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
-    </div>
-  </div>
-
-</body>
-</html>
+    .card {
+      background-color: #1a1a2e;
+      border: none;
+      border-radiu
