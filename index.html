@@ -1,177 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faiyaz | DevOps Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Faiyaz - DevOps Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
-      background: linear-gradient(to right, #000000, #1a1a1a);
-      color: #fff;
+      background: linear-gradient(to right, #000000, #001a00);
+      color: #e0ffe0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
+
     header {
       text-align: center;
       padding: 2rem;
-      background: #0f0f0f;
+      background: #001100;
     }
+
     header h1 {
       font-size: 3rem;
-      color: #FFD700;
+      color: #00ff00;
     }
-    header p {
-      color: #ccc;
-      font-size: 1.2rem;
-    }
+
     section {
       padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
     }
-    h2 {
-      color: #FFD700;
-      border-bottom: 2px solid #FFA500;
-      display: inline-block;
-      padding-bottom: 4px;
-      margin-bottom: 1rem;
-    }
-    .about, .experience {
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-    .tools {
+
+    .tools, .projects {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
     }
-    .tool {
+
+    .tool, .project {
       text-align: center;
-      background: #1a1a1a;
-      border: 1px solid #FFD700;
+      background: #0d1a0d;
+      border: 1px solid #00cc00;
       border-radius: 12px;
       padding: 1rem;
       width: 200px;
       transition: transform 0.3s ease;
       cursor: pointer;
     }
-    .tool:hover {
+
+    .tool:hover, .project:hover {
       transform: scale(1.05);
-      background: #2e2e2e;
+      background: #003300;
     }
-    .tool i {
+
+    .tool i, .project i {
       font-size: 3rem;
       margin-bottom: 1rem;
-      color: #FFD700;
+      color: #00ff00;
     }
-    .tool p {
-      font-size: 0.9rem;
-      color: #ccc;
-    }
+
     footer {
       text-align: center;
-      background: #0f0f0f;
+      background: #001100;
       padding: 1.5rem;
       font-size: 0.9rem;
-      color: #FFD700;
+      color: #66ff66;
     }
+
     a {
-      color: #FFA500;
+      color: #66ff66;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
-      color: #FFD700;
+      color: #00ff00;
     }
-    img.profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #FFD700;
-      margin-bottom: 1rem;
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    h2 {
+      color: #00ff00;
+      border-bottom: 2px solid #00cc00;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .install-section {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #0f1f0f;
+      border: 1px solid #00cc00;
+      border-radius: 8px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    pre {
+      background: #000f00;
+      padding: 1rem;
+      overflow-x: auto;
+      color: #00ff00;
+      border-left: 4px solid #00cc00;
+    }
+
+    .install-section h3 {
+      color: #66ff66;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="profile.jpg" alt="Faiyaz Profile Picture" class="profile-pic"/>
     <h1>Faiyaz - DevOps Engineer</h1>
-    <p>From Networking Agent to DevOps Cloud Enthusiast 🚀</p>
+    <p>Email: abdul.faiyaz.shukor@gmail.com | Contact: 9884939021</p>
+    <p>
+      <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn</a>
+    </p>
   </header>
 
+  <section class="about">
+    <h2>My DevOps Journey</h2>
+    <p>
+      My journey began with a conversation with a close friend, who was deeply concerned about my career path. She introduced me to the world of DevOps through StarAgile, encouraging me despite my non-IT background and fear of coding.
+    </p>
+    <p>
+      As I started learning about Cloud platforms, I realized how powerful DevOps is. It offers faster deployments, higher software quality, and automates everything — reducing manual errors. With the rise of AI, this automation becomes even smarter, allowing multi-node configuration and deployment in one click!
+    </p>
+    <p>
+      <strong>Past Work Experience (Non-IT):</strong><br>
+      Concentrix Technologies – Networking Agent for Symantec (2016–2019)<br>
+      WNS – Sr Ops Associate<br>
+      CaratLane – Jewellery Expert
+    </p>
+  </section>
+
   <section>
-    <h2>🌟 My DevOps Journey</h2>
-    <div class="about">
-      <p>
-        My DevOps journey began after a heartfelt conversation with my best friend who was deeply concerned about my career growth. She introduced me to the world of DevOps and suggested the StarAgile course, which I started on 29-Nov-2024 and completed on 10-Mar-2025.
-      </p>
-      <p>
-        With passion and dedication, I transitioned from a non-IT background into cloud technologies, learning modern DevOps tools and practices, and building hands-on experience through personal projects and continuous learning.
-      </p>
-    </div>
-
-    <h2>🧳 Non-IT Work Experience</h2>
-    <div class="experience">
-      <ul>
-        <li><strong>Concentrix Technologies</strong> - Networking Agent for Symantec (2016–2019)</li>
-        <li><strong>WNS</strong> - Senior Operations Associate</li>
-        <li><strong>CaratLane</strong> - Jewelry Expert</li>
-      </ul>
-    </div>
-
-    <h2>🛠️ Tools & Technologies</h2>
+    <h2>DevOps Tools</h2>
     <div class="tools">
-      <div class="tool">
-        <i class="fab fa-git-alt"></i>
-        <h4>Git</h4>
-        <p>Version control system for source code collaboration.</p>
+      <a class="tool" href="#git"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
+      <a class="tool" href="#jenkins"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
+      <a class="tool" href="#docker"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
+      <a class="tool" href="#kubernetes"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
+      <a class="tool" href="#ansible"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
+      <a class="tool" href="#terraform"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>Infra as Code</p></a>
+      <a class="tool" href="#prometheus"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
+      <a class="tool" href="#grafana"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboarding</p></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <i class="fas fa-heartbeat"></i>
+        <p><strong>Healthcare Project</strong></p>
+        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View Project</a>
       </div>
-      <div class="tool">
-        <i class="fas fa-code-branch"></i>
-        <h4>CI/CD</h4>
-        <p>Automates integration, testing & deployment processes.</p>
-      </div>
-      <div class="tool">
-        <i class="fab fa-docker"></i>
-        <h4>Docker</h4>
-        <p>Containerizes applications with all dependencies.</p>
-      </div>
-      <div class="tool">
-        <i class="fas fa-network-wired"></i>
-        <h4>Kubernetes</h4>
-        <p>Orchestrates and manages containerized workloads.</p>
-      </div>
-      <div class="tool">
-        <i class="fas fa-cogs"></i>
-        <h4>Ansible</h4>
-        <p>Automates server configuration and app deployments.</p>
-      </div>
-      <div class="tool">
-        <i class="fas fa-terraform"></i>
-        <h4>Terraform</h4>
-        <p>Infrastructure as Code for provisioning cloud infra.</p>
-      </div>
-      <div class="tool">
-        <i class="fas fa-chart-line"></i>
-        <h4>Prometheus</h4>
-        <p>Monitors system metrics and health checks.</p>
-      </div>
-      <div class="tool">
-        <i class="fas fa-chart-pie"></i>
-        <h4>Grafana</h4>
-        <p>Visualizes performance metrics via dashboards.</p>
+      <div class="project">
+        <i class="fas fa-shield-alt"></i>
+        <p><strong>Insurance Project</strong></p>
+        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
+  <!-- Installation Sections -->
+  <section class="install-section" id="git">
+    <h3>Install Git</h3>
+    <pre>
+sudo apt update
+sudo apt install git -y
+git --version
+    </pre>
+  </section>
+
+  <section class="install-section" id="jenkins">
+    <h3>Install Jenkins</h3>
+    <pre>
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install jenkins -y
+sudo systemctl start jenkins
+    </pre>
+  </section>
+
+  <section class="install-section" id="docker">
+    <h3>Install Docker</h3>
+    <pre>
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+docker --version
+    </pre>
+  </section>
+
+  <section class="install-section" id="kubernetes">
+    <h3>Install Kubernetes (kubectl & minikube)</h3>
+    <pre>
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s \
+https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+    </pre>
+  </section>
+
+  <section class="install-section" id="ansible">
+    <h3>Install Ansible</h3>
+    <pre>
+sudo apt update
+sudo apt install ansible -y
+ansible --version
+    </pre>
+  </section>
+
+  <section class="install-section" id="terraform">
+    <h3>Install Terraform</h3>
+    <pre>
+sudo apt update
+sudo apt install wget unzip -y
+wget https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip
+unzip terraform_1.7.5_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+terraform -version
+    </pre>
+  </section>
+
+  <section class="install-section" id="prometheus">
+    <h3>Install Prometheus</h3>
+    <pre>
+wget https://github.com/prometheus/prometheus/releases/download/v2.50.0/prometheus-2.50.0.linux-amd64.tar.gz
+tar xvf prometheus-2.50.0.linux-amd64.tar.gz
+cd prometheus-2.50.0.linux-amd64
+./prometheus
+    </pre>
+  </section>
+
+  <section class="install-section" id="grafana">
+    <h3>Install Grafana</h3>
+    <pre>
+sudo apt install -y apt-transport-https software-properties-common
+sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+sudo apt update
+sudo apt install grafana -y
+sudo systemctl start grafana-server
+sudo systemctl enable grafana-server
+    </pre>
+  </section>
+
   <footer>
-    © 2025 Faiyaz | DevOps Portfolio • <a href="mailto:faiyaz@example.com">faiyaz@example.com</a>
+    &copy; 2025 Faiyaz - DevOps Portfolio | Built with 💚 DevOps
   </footer>
+
 </body>
 </html>
