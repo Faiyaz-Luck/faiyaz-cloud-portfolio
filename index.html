@@ -5,149 +5,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faiyaz | DevOps Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto Mono', monospace;
-      background: linear-gradient(135deg, #000000, #8B0000);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #0f0f0f, #330000);
       color: #fff;
       scroll-behavior: smooth;
     }
 
     header {
+      background-color: #1a1a1a;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem;
-      animation: fadeInDown 2s ease;
+      border-bottom: 2px solid red;
     }
 
-    h1 {
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
-      color: #FF4136;
+      color: #ff3333;
     }
 
-    .section {
+    section {
+      padding: 3rem;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      border-left: 5px solid #ff4d4d;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
       padding: 2rem;
-      animation: fadeInUp 2s ease;
-    }
-
-    .tools-icons img, .projects-icons img {
-      width: 70px;
-      margin: 10px;
+      margin: 1rem 0;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
       transition: transform 0.3s ease;
     }
 
-    .tools-icons img:hover, .projects-icons img:hover {
-      transform: scale(1.2);
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .tool {
+      background: #2e2e2e;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 160px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .tool:hover {
+      background: #400000;
+      transform: scale(1.1);
+    }
+
+    .tool i, .tool img {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
-      color: #FFD700;
+      color: #ff4d4d;
       text-decoration: none;
     }
 
-    .contact {
-      background: #111;
-      padding: 1.5rem;
+    footer {
+      background: #1a1a1a;
+      padding: 2rem;
       text-align: center;
+      border-top: 2px solid red;
     }
 
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInDown {
-      from {
-        transform: translateY(-20px);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        transform: translateY(20px);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    .project-icons img {
+      width: 48px;
+      height: 48px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Faiyaz's DevOps Journey</h1>
-    <p>Turning passion into automation with cloud-native tools 🚀</p>
+    <h1>Faiyaz DevOps Portfolio</h1>
   </header>
 
-  <section class="section">
-    <h2>My DevOps Journey</h2>
-    <p>
-      My journey into DevOps began with a heartfelt conversation with my best friend who was concerned about my career growth.
-      She introduced me to the world of DevOps through a course at StarAgile. Despite not being proficient in coding, I realized
-      the power of cloud computing and automation. With DevOps, I discovered a world where I can deliver high-quality software,
-      reduce human error, and scale applications with ease. Thanks to tools like Terraform, Docker, and Kubernetes, my confidence grew.
-      Now, I'm proficient in provisioning infrastructure, automating deployments, and monitoring applications in real-time.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>DevOps Tools I Use</h2>
-    <div class="tools-icons">
-      <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git"></a>
-      <a href="https://www.jenkins.io/doc/book/installing/" target="_blank"><img src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins"></a>
-      <a href="https://docs.docker.com/get-docker/" target="_blank"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker"></a>
-      <a href="https://kubernetes.io/docs/setup/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes"></a>
-      <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible"></a>
-      <a href="https://developer.hashicorp.com/terraform/downloads" target="_blank"><img src="https://www.datocms-assets.com/2885/1620155113-brandhcterraformverticalcolor.png" alt="Terraform" style="background-color:#fff; border-radius:8px;"></a>
-      <a href="https://prometheus.io/docs/prometheus/latest/installation/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" alt="Prometheus"></a>
-      <a href="https://grafana.com/docs/grafana/latest/installation/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Grafana_icon.svg" alt="Grafana"></a>
+  <section>
+    <h2>🚀 My DevOps Journey</h2>
+    <div class="card">
+      <p>My journey into DevOps began when one of my closest friends, concerned about my career growth, encouraged me to pursue a DevOps course at StarAgile. Even though I was not confident in coding, I took the leap. As I progressed, I was introduced to cloud platforms, automation, and scalable infrastructure. I realized how automation and collaboration with tools like Jenkins, Terraform, and Kubernetes help deploy high-quality software rapidly with fewer errors. Integrating AI into DevOps has only made it more exciting and efficient. With just one click, complex deployments now happen seamlessly across multiple nodes!</p>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Featured Projects</h2>
-    <div class="projects-icons">
-      <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Healthcare Project">
+  <section>
+    <h2>🛠️ DevOps Tools</h2>
+    <div class="tools">
+      <a class="tool" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">
+        <i class="fab fa-git-alt"></i>
+        <div>Git</div>
       </a>
-      <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991152.png" alt="Insurance Project">
+      <a class="tool" href="https://www.jenkins.io/doc/book/installing/" target="_blank">
+        <i class="fab fa-jenkins"></i>
+        <div>Jenkins</div>
+      </a>
+      <a class="tool" href="https://docs.docker.com/get-docker/" target="_blank">
+        <i class="fab fa-docker"></i>
+        <div>Docker</div>
+      </a>
+      <a class="tool" href="https://kubernetes.io/docs/setup/" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="k8s" />
+        <div>Kubernetes</div>
+      </a>
+      <a class="tool" href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" alt="ansible" />
+        <div>Ansible</div>
+      </a>
+      <a class="tool" href="https://developer.hashicorp.com/terraform/downloads" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/hashicorp/hashicorp-icon.svg" alt="terraform" />
+        <div>Terraform</div>
+      </a>
+      <a class="tool" href="https://prometheus.io/docs/introduction/first_steps/" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" alt="prometheus" />
+        <div>Prometheus</div>
+      </a>
+      <a class="tool" href="https://grafana.com/docs/grafana/latest/setup-grafana/installation/" target="_blank">
+        <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" />
+        <div>Grafana</div>
       </a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>DevOps Automation Benefits</h2>
-    <p>
-      DevOps helps deliver high-quality software with faster deployment and reduced human error. With one-click configuration,
-      it automates multi-node setups, integrates AI, and boosts collaboration. Embracing DevOps means embracing agility and innovation.
-    </p>
+  <section>
+    <h2>📂 Projects</h2>
+    <div class="card">
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/103/103086.png" alt="healthcare" />
+        <strong>Healthcare Project:</strong>
+        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
+      </div>
+      <p>A cloud-native microservice application managing patient data securely using DevOps principles on Kubernetes.</p>
+    </div>
+    <div class="card">
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="insurance" />
+        <strong>Insurance Project:</strong>
+        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
+      </div>
+      <p>Automated insurance policy workflow with CI/CD, Docker, Terraform for infra setup, and Grafana dashboards for monitoring.</p>
+    </div>
   </section>
 
-  <section class="section contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
-    <p><strong>Phone:</strong> 9884939021</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Faiyaz-Luck" target="_blank">github.com/Faiyaz-Luck</a></p>
-    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">[Add your LinkedIn link]</a></p>
+  <section>
+    <h2>📞 Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919884939021">+91 98849 39021</a></p>
+      <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">github.com/Faiyaz-Luck</a></p>
+      <p>LinkedIn: <a href="#">Coming Soon</a></p>
+    </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Faiyaz | Built with ❤️ using HTML, CSS & DevOps Passion</p>
+  </footer>
 </body>
 
 </html>
