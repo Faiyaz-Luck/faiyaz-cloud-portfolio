@@ -10,8 +10,8 @@
     }
 
     body {
-      background: linear-gradient(to right, #000000, #2c0202);
-      color: #fff;
+      background: linear-gradient(to right, #000000, #001a00);
+      color: #e0ffe0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
@@ -20,12 +20,12 @@
     header {
       text-align: center;
       padding: 2rem;
-      background: #1a0000;
+      background: #001100;
     }
 
     header h1 {
       font-size: 3rem;
-      color: #ff3333;
+      color: #00ff00;
     }
 
     section {
@@ -41,8 +41,8 @@
 
     .tool, .project {
       text-align: center;
-      background: #1a1a1a;
-      border: 1px solid #ff0000;
+      background: #0d1a0d;
+      border: 1px solid #00cc00;
       border-radius: 12px;
       padding: 1rem;
       width: 200px;
@@ -52,29 +52,31 @@
 
     .tool:hover, .project:hover {
       transform: scale(1.05);
-      background: #330000;
+      background: #003300;
     }
 
     .tool i, .project i {
       font-size: 3rem;
       margin-bottom: 1rem;
-      color: #ff3333;
+      color: #00ff00;
     }
 
     footer {
       text-align: center;
-      background: #1a0000;
+      background: #001100;
       padding: 1.5rem;
       font-size: 0.9rem;
+      color: #66ff66;
     }
 
     a {
-      color: #ff6666;
+      color: #66ff66;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #00ff00;
     }
 
     .about {
@@ -84,8 +86,8 @@
     }
 
     h2 {
-      color: #ff4d4d;
-      border-bottom: 2px solid #ff1a1a;
+      color: #00ff00;
+      border-bottom: 2px solid #00cc00;
       display: inline-block;
       padding-bottom: 4px;
     }
@@ -93,8 +95,8 @@
     .install-section {
       margin-top: 3rem;
       padding: 1rem;
-      background: #1c0d0d;
-      border: 1px solid #990000;
+      background: #0f1f0f;
+      border: 1px solid #00cc00;
       border-radius: 8px;
       max-width: 900px;
       margin-left: auto;
@@ -102,15 +104,15 @@
     }
 
     pre {
-      background: #0f0f0f;
+      background: #000f00;
       padding: 1rem;
       overflow-x: auto;
       color: #00ff00;
-      border-left: 4px solid #ff3333;
+      border-left: 4px solid #00cc00;
     }
 
     .install-section h3 {
-      color: #ff6666;
+      color: #66ff66;
     }
   </style>
 </head>
@@ -185,8 +187,7 @@ git --version
     <h3>Install Jenkins</h3>
     <pre>
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
-  /etc/apt/sources.list.d/jenkins.list'
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt update
 sudo apt install jenkins -y
 sudo systemctl start jenkins
@@ -207,8 +208,8 @@ docker --version
   <section class="install-section" id="kubernetes">
     <h3>Install Kubernetes (kubectl & minikube)</h3>
     <pre>
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s \
-https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s \
+https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
     </pre>
@@ -258,7 +259,7 @@ sudo systemctl enable grafana-server
   </section>
 
   <footer>
-    &copy; 2025 Faiyaz - DevOps Portfolio | Built with ❤️ in DevOps india
+    &copy; 2025 Faiyaz - DevOps Portfolio | Built with 💚 DevOps
   </footer>
 
 </body>
