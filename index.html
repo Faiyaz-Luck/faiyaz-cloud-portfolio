@@ -1,186 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faiyaz | DevOps Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #0f0f0f, #330000);
-      color: #fff;
+    html {
       scroll-behavior: smooth;
     }
-
+    body {
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
     header {
-      background-color: #1a1a1a;
-      padding: 2rem;
       text-align: center;
-      border-bottom: 2px solid red;
+      padding: 2rem;
+      background: #0f0f0f;
     }
-
     header h1 {
-      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
-      color: #ff3333;
+      color: #FFD700;
     }
-
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
     section {
-      padding: 3rem;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
     }
-
     h2 {
-      color: #ff4d4d;
-      border-left: 5px solid #ff4d4d;
-      padding-left: 1rem;
+      color: #FFD700;
+      border-bottom: 2px solid #FFA500;
+      display: inline-block;
+      padding-bottom: 4px;
       margin-bottom: 1rem;
     }
-
-    .card {
-      background: #1e1e1e;
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 1rem 0;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-      transition: transform 0.3s ease;
+    .about, .experience {
+      line-height: 1.7;
+      margin-bottom: 2rem;
     }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
     .tools {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
       justify-content: center;
+      gap: 2rem;
     }
-
     .tool {
-      background: #2e2e2e;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 160px;
       text-align: center;
-      transition: 0.3s;
+      background: #1a1a1a;
+      border: 1px solid #FFD700;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 200px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
     }
-
     .tool:hover {
-      background: #400000;
-      transform: scale(1.1);
+      transform: scale(1.05);
+      background: #2e2e2e;
     }
-
-    .tool i, .tool img {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+    .tool i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #FFD700;
     }
-
+    .tool p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      background: #0f0f0f;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #FFD700;
+    }
     a {
-      color: #ff4d4d;
+      color: #FFA500;
       text-decoration: none;
     }
-
-    footer {
-      background: #1a1a1a;
-      padding: 2rem;
-      text-align: center;
-      border-top: 2px solid red;
+    a:hover {
+      text-decoration: underline;
+      color: #FFD700;
     }
-
-    .project-icons img {
-      width: 48px;
-      height: 48px;
+    img.profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #FFD700;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Faiyaz DevOps Portfolio</h1>
+    <img src="profile.jpg" alt="Faiyaz Profile Picture" class="profile-pic"/>
+    <h1>Faiyaz - DevOps Engineer</h1>
+    <p>From Networking Agent to DevOps Cloud Enthusiast 🚀</p>
   </header>
 
   <section>
-    <h2>🚀 My DevOps Journey</h2>
-    <div class="card">
-      <p>My journey into DevOps began when one of my closest friends, concerned about my career growth, encouraged me to pursue a DevOps course at StarAgile. Even though I was not confident in coding, I took the leap. As I progressed, I was introduced to cloud platforms, automation, and scalable infrastructure. I realized how automation and collaboration with tools like Jenkins, Terraform, and Kubernetes help deploy high-quality software rapidly with fewer errors. Integrating AI into DevOps has only made it more exciting and efficient. With just one click, complex deployments now happen seamlessly across multiple nodes!</p>
+    <h2>🌟 My DevOps Journey</h2>
+    <div class="about">
+      <p>
+        My DevOps journey began after a heartfelt conversation with my best friend who was deeply concerned about my career growth. She introduced me to the world of DevOps and suggested the StarAgile course, which I started on 29-Nov-2024 and completed on 10-Mar-2025.
+      </p>
+      <p>
+        With passion and dedication, I transitioned from a non-IT background into cloud technologies, learning modern DevOps tools and practices, and building hands-on experience through personal projects and continuous learning.
+      </p>
     </div>
-  </section>
 
-  <section>
-    <h2>🛠️ DevOps Tools</h2>
+    <h2>🧳 Non-IT Work Experience</h2>
+    <div class="experience">
+      <ul>
+        <li><strong>Concentrix Technologies</strong> - Networking Agent for Symantec (2016–2019)</li>
+        <li><strong>WNS</strong> - Senior Operations Associate</li>
+        <li><strong>CaratLane</strong> - Jewelry Expert</li>
+      </ul>
+    </div>
+
+    <h2>🛠️ Tools & Technologies</h2>
     <div class="tools">
-      <a class="tool" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">
+      <div class="tool">
         <i class="fab fa-git-alt"></i>
-        <div>Git</div>
-      </a>
-      <a class="tool" href="https://www.jenkins.io/doc/book/installing/" target="_blank">
-        <i class="fab fa-jenkins"></i>
-        <div>Jenkins</div>
-      </a>
-      <a class="tool" href="https://docs.docker.com/get-docker/" target="_blank">
+        <h4>Git</h4>
+        <p>Version control system for source code collaboration.</p>
+      </div>
+      <div class="tool">
+        <i class="fas fa-code-branch"></i>
+        <h4>CI/CD</h4>
+        <p>Automates integration, testing & deployment processes.</p>
+      </div>
+      <div class="tool">
         <i class="fab fa-docker"></i>
-        <div>Docker</div>
-      </a>
-      <a class="tool" href="https://kubernetes.io/docs/setup/" target="_blank">
-        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="k8s" />
-        <div>Kubernetes</div>
-      </a>
-      <a class="tool" href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank">
-        <img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" alt="ansible" />
-        <div>Ansible</div>
-      </a>
-      <a class="tool" href="https://developer.hashicorp.com/terraform/downloads" target="_blank">
-        <img src="https://www.vectorlogo.zone/logos/hashicorp/hashicorp-icon.svg" alt="terraform" />
-        <div>Terraform</div>
-      </a>
-      <a class="tool" href="https://prometheus.io/docs/introduction/first_steps/" target="_blank">
-        <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" alt="prometheus" />
-        <div>Prometheus</div>
-      </a>
-      <a class="tool" href="https://grafana.com/docs/grafana/latest/setup-grafana/installation/" target="_blank">
-        <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" />
-        <div>Grafana</div>
-      </a>
-    </div>
-  </section>
-
-  <section>
-    <h2>📂 Projects</h2>
-    <div class="card">
-      <div class="project-icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/103/103086.png" alt="healthcare" />
-        <strong>Healthcare Project:</strong>
-        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
+        <h4>Docker</h4>
+        <p>Containerizes applications with all dependencies.</p>
       </div>
-      <p>A cloud-native microservice application managing patient data securely using DevOps principles on Kubernetes.</p>
-    </div>
-    <div class="card">
-      <div class="project-icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="insurance" />
-        <strong>Insurance Project:</strong>
-        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
+      <div class="tool">
+        <i class="fas fa-network-wired"></i>
+        <h4>Kubernetes</h4>
+        <p>Orchestrates and manages containerized workloads.</p>
       </div>
-      <p>Automated insurance policy workflow with CI/CD, Docker, Terraform for infra setup, and Grafana dashboards for monitoring.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>📞 Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
-      <p>Phone: <a href="tel:+919884939021">+91 98849 39021</a></p>
-      <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">github.com/Faiyaz-Luck</a></p>
-      <p>LinkedIn: <a href="#">Coming Soon</a></p>
+      <div class="tool">
+        <i class="fas fa-cogs"></i>
+        <h4>Ansible</h4>
+        <p>Automates server configuration and app deployments.</p>
+      </div>
+      <div class="tool">
+        <i class="fas fa-terraform"></i>
+        <h4>Terraform</h4>
+        <p>Infrastructure as Code for provisioning cloud infra.</p>
+      </div>
+      <div class="tool">
+        <i class="fas fa-chart-line"></i>
+        <h4>Prometheus</h4>
+        <p>Monitors system metrics and health checks.</p>
+      </div>
+      <div class="tool">
+        <i class="fas fa-chart-pie"></i>
+        <h4>Grafana</h4>
+        <p>Visualizes performance metrics via dashboards.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Faiyaz | Built with ❤️ using HTML, CSS & DevOps Passion</p>
+    © 2025 Faiyaz | DevOps Portfolio • <a href="mailto:faiyaz@example.com">faiyaz@example.com</a>
   </footer>
 </body>
-
 </html>
