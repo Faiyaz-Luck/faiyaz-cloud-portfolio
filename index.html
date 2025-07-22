@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faiyaz DevOps Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta charset="UTF-8">
+  <title>Faiyaz - DevOps Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
+      background: linear-gradient(to right, #000000, #2c0202);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #000000, #8B0000);
-      color: #ffffff;
-      overflow-x: hidden;
+      padding: 0;
     }
 
     header {
       text-align: center;
       padding: 2rem;
+      background: #1a0000;
     }
 
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      border: 3px solid red;
+    header h1 {
+      font-size: 3rem;
+      color: #ff3333;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin: 1rem 0 0.5rem;
+    section {
+      padding: 2rem;
     }
 
-    .section {
-      padding: 3rem 2rem;
-    }
-
-    .tools-grid, .projects {
+    .tools, .projects {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
       justify-content: center;
+      gap: 2rem;
     }
 
     .tool, .project {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      width: 260px;
       text-align: center;
-      transition: transform 0.3s;
+      background: #1a1a1a;
+      border: 1px solid #ff0000;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 200px;
+      transition: transform 0.3s ease;
     }
 
     .tool:hover, .project:hover {
       transform: scale(1.05);
-      background: #2d2d2d;
+      background: #330000;
     }
 
-    .tool img, .project img {
-      height: 50px;
+    .tool i, .project i {
+      font-size: 3rem;
       margin-bottom: 1rem;
+      color: #ff3333;
     }
 
     footer {
-      background: #111;
-      color: #ccc;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.95rem;
+      background: #1a0000;
+      padding: 1.5rem;
+      font-size: 0.9rem;
     }
 
     a {
-      color: #ff4d4d;
+      color: #ff6666;
       text-decoration: none;
     }
 
@@ -79,101 +72,80 @@
       text-decoration: underline;
     }
 
-    .animation-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(#ff0000 1px, transparent 1px);
-      background-size: 40px 40px;
-      animation: animateBg 10s linear infinite;
-      opacity: 0.05;
-    }
-
-    @keyframes animateBg {
-      from { background-position: 0 0; }
-      to { background-position: 100px 100px; }
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 2rem;
+    .about {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
     }
 
     h2 {
       color: #ff4d4d;
-      text-align: center;
+      border-bottom: 2px solid #ff1a1a;
+      display: inline-block;
+      padding-bottom: 4px;
     }
   </style>
 </head>
 <body>
-  <div class="animation-bg"></div>
 
   <header>
-    <img src="images/profile.jpg" alt="Profile">
-    <h1>Faiyaz Shukor</h1>
-    <p>DevOps Engineer | GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">@Faiyaz-Luck</a></p>
+    <h1>Faiyaz - DevOps Engineer</h1>
+    <p>Email: abdul.faiyaz.shukor@gmail.com | Contact: 9884939021</p>
+    <p>
+      <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn</a>
+    </p>
   </header>
 
-  <section class="section">
-    <h2>🚀 My DevOps Journey</h2>
+  <section class="about">
+    <h2>My DevOps Journey</h2>
     <p>
-      My journey into DevOps began with a heartfelt conversation with my best friend, who encouraged me to pursue a career that aligned with my growth potential. She introduced me to the StarAgile DevOps course in November 2024 — and from there, my transformation began. I immersed myself in automation, containerization, and cloud-native tools that define DevOps today.
+      My journey began with a conversation with a close friend, who was deeply concerned about my career path. She introduced me to the world of DevOps through StarAgile, encouraging me despite my non-IT background and fear of coding.
+    </p>
+    <p>
+      As I started learning about Cloud platforms, I realized how powerful DevOps is. It offers faster deployments, higher software quality, and automates everything — reducing manual errors. With the rise of AI, this automation becomes even smarter, allowing multi-node configuration and deployment in one click!
+    </p>
+    <p>
+      <strong>Past Work Experience (Non-IT):</strong><br>
+      Concentrix Technologies – Networking Agent for Symantec (2016–2019)<br>
+      WNS – Sr Ops Associate<br>
+      CaratLane – Jewellery Expert
     </p>
   </section>
 
-  <section class="section">
-    <h2>🛠️ DevOps Tools I Use</h2>
-    <div class="tools-grid">
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/><strong>Git</strong><br>Version control and collaboration</div>
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"/><strong>Jenkins</strong><br>CI/CD pipeline automation</div>
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/><strong>Docker</strong><br>Containerization</div>
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"/><strong>Kubernetes</strong><br>Orchestration & scaling</div>
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"/><strong>Ansible</strong><br>Configuration management</div>
-      <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"/><strong>Terraform</strong><br>Infrastructure as Code</div>
-      <div class="tool"><img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/prometheus.svg"/><strong>Prometheus</strong><br>Monitoring & alerting</div>
-      <div class="tool"><img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/grafana.svg"/><strong>Grafana</strong><br>Dashboard visualization</div>
+  <section>
+    <h2>DevOps Tools</h2>
+    <div class="tools">
+      <div class="tool"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></div>
+      <div class="tool"><i class="fas fa-code-branch"></i><p><strong>CI/CD</strong><br>Automation pipelines</p></div>
+      <div class="tool"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></div>
+      <div class="tool"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Container orchestration</p></div>
+      <div class="tool"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Configuration Mgmt</p></div>
+      <div class="tool"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>Infrastructure as Code</p></div>
+      <div class="tool"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></div>
+      <div class="tool"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboarding</p></div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>📁 DevOps Projects</h2>
+  <section>
+    <h2>Projects</h2>
     <div class="projects">
       <div class="project">
-        <img src="images/healthcare.png" />
-        <h3>Healthcare CI/CD</h3>
-        <p>Spring Boot app with Jenkins, Docker, Ansible, K8s, Terraform on AWS</p>
-        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">GitHub Repo</a>
+        <i class="fas fa-heartbeat"></i>
+        <p><strong>Healthcare Project</strong></p>
+        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View Project</a>
       </div>
       <div class="project">
-        <img src="images/insurance.png" />
-        <h3>Insurance DevOps</h3>
-        <p>End-to-end CI/CD pipeline with monitoring & production deployment</p>
-        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">GitHub Repo</a>
+        <i class="fas fa-shield-alt"></i>
+        <p><strong>Insurance Project</strong></p>
+        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View Project</a>
       </div>
     </div>
-  </section>
-
-  <section class="section">
-    <h2>💼 Past Work Experience (Non-IT)</h2>
-    <ul>
-      <li>Concentrix Technologies - Networking Agent (Symantec) (2016–2019)</li>
-      <li>WNS - Senior Ops Associate</li>
-      <li>CaratLane - Jewellery Expert</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>📞 Contact</h2>
-    <p><strong>Email:</strong> abdul.faiyaz.shukor@gmail.com</p>
-    <p><strong>Phone:</strong> +91 98849 39021</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdul-faiyaz-a5453a18b" target="_blank">LinkedIn Profile</a></p>
   </section>
 
   <footer>
-    Made with ❤️ by Faiyaz Shukor. DevOps is not just a skill, it's a mindset.
+    &copy; 2025 Faiyaz - DevOps Portfolio | Built with ❤️ in DevOps
   </footer>
+
 </body>
 </html>
