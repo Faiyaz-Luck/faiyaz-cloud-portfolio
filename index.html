@@ -1,146 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faiyaz Cloud Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papnmXYz4L1QvNQx7Cy9m4og2bVHJ8uHyM9cH9RQDW1MlFk1I2pgVn+XxSjbQp8aV1N2FeY8d8R5B7QzJmCkWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Faiyaz Cloud DevOps Portfolio</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a0000);
+      color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #000000, #8B0000);
-      color: #fff;
-      overflow-x: hidden;
     }
 
     header {
       text-align: center;
+      padding: 2rem 1rem;
+      background-color: #1c1c1c;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+    }
+
+    section {
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.8);
-      animation: fadeInDown 1s ease-out;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #ff4c4c;
-    }
-
-    .section {
-      padding: 2rem;
-      animation: fadeInUp 1s ease-out;
     }
 
     .tools {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
       justify-content: center;
-      margin-top: 1rem;
+      gap: 1.5rem;
     }
 
     .tool {
+      background-color: #2a2a2a;
+      border: 1px solid #ff4d4d;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 220px;
       text-align: center;
-      width: 100px;
-      transition: transform 0.3s;
     }
 
-    .tool:hover {
-      transform: scale(1.1);
+    .tool h3 {
+      color: #ff6666;
     }
 
-    .tool i {
-      font-size: 3rem;
-      color: #ff4c4c;
+    .contact {
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      border-top: 2px solid #ff0000;
     }
 
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .contact h2 {
+      color: #ff4d4d;
     }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    a {
+      color: #ff9999;
+    }
+
+    .projects {
+      margin-top: 2rem;
+    }
+
+    .projects ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .projects li {
+      margin-bottom: 1rem;
+    }
+
+    .graph-image {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .graph-image img {
+      width: 90%;
+      max-width: 600px;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Faiyaz's DevOps Portfolio</h1>
-    <p>My journey from networking to DevOps</p>
+    <p>Aspiring DevOps Engineer | Automation Enthusiast</p>
   </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I began my professional journey in the networking domain with companies like Concentrix and WNS. However, after a deep career conversation with a close friend, I decided to pivot into the world of DevOps. I enrolled in the DevOps certification course at StarAgile, and since then, I’ve been upskilling myself daily through hands-on projects and continuous learning.</p>
+  <section>
+    <h2>My DevOps Journey</h2>
+    <p>My journey into DevOps started with a conversation with my best friend who was concerned about my career progression. Based on her suggestion, I enrolled in the Star Agile DevOps course on 29/11/2024 and completed it on 10/03/2025. Since then, I’ve been building and automating projects to master DevOps tools and practices.</p>
   </section>
 
-  <section class="section">
-    <h2>DevOps Toolbelt</h2>
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Banking & Finance Project:</strong> <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a></li>
+      <li><strong>Healthcare Project:</strong> <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a></li>
+      <li><strong>Insurance Project:</strong> <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>DevOps Tools</h2>
     <div class="tools">
       <div class="tool">
-        <i class="fab fa-git-alt"></i>
-        <p>Git</p>
+        <h3>Git</h3>
+        <p>Used to track code changes and collaborate across teams.</p>
       </div>
       <div class="tool">
-        <i class="fab fa-github"></i>
-        <p>GitHub</p>
+        <h3>CI/CD</h3>
+        <p>Automates build, test, and deploy processes for fast delivery.</p>
       </div>
       <div class="tool">
-        <i class="fas fa-cogs"></i>
-        <p>Jenkins</p>
+        <h3>Docker</h3>
+        <p>Packages apps with dependencies into containers for consistency.</p>
       </div>
       <div class="tool">
-        <i class="fab fa-docker"></i>
-        <p>Docker</p>
+        <h3>Kubernetes</h3>
+        <p>Manages deployment and scaling of containerized apps.</p>
       </div>
       <div class="tool">
-        <i class="fas fa-network-wired"></i>
-        <p>Kubernetes</p>
+        <h3>Ansible</h3>
+        <p>Automates infrastructure setup and app configuration.</p>
       </div>
       <div class="tool">
-        <i class="fas fa-cloud"></i>
-        <p>AWS</p>
+        <h3>Terraform</h3>
+        <p>Infrastructure as Code tool for cloud provisioning.</p>
       </div>
       <div class="tool">
-        <i class="fas fa-code"></i>
-        <p>Ansible</p>
+        <h3>Prometheus</h3>
+        <p>Monitors systems and triggers alerts based on metrics.</p>
       </div>
       <div class="tool">
-        <i class="fas fa-project-diagram"></i>
-        <p>Terraform</p>
+        <h3>Grafana</h3>
+        <p>Creates visual dashboards from monitoring data.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Project: FinanceMe</h2>
-    <p>This project demonstrates a complete CI/CD DevOps pipeline setup for a finance and banking domain application using tools like Git, Jenkins, Docker, Terraform, Ansible, and Kubernetes.</p>
-    <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank" style="color: #ff4c4c;">View on GitHub</a>
+  <section class="graph-image">
+    <h2>Automation Workflow</h2>
+    <img src="https://raw.githubusercontent.com/Faiyaz-Luck/faiyaz-cloud-portfolio/main/automation-graph.png" alt="CI/CD Automation Graph">
   </section>
 
-  <section class="section">
-    <h2>Past Experience</h2>
-    <ul>
-      <li><strong>Concentrix Technologies</strong> – Networking Agent for Symantec (2016–2019)</li>
-      <li><strong>WNS</strong> – Senior Operations Associate</li>
-      <li><strong>CaratLane</strong> – Jewellery Expert</li>
-    </ul>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
+    <p>Phone: 9884939021</p>
+    <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">https://github.com/Faiyaz-Luck</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-link" target="_blank">Your LinkedIn</a></p>
   </section>
-
-  <section class="section">
-    <h2>Certifications</h2>
-    <p>DevOps Certification – StarAgile (29 Nov 2024 – 10 Mar 2025)</p>
-  </section>
-
-  <footer class="section" style="text-align:center; background:#111; padding:1rem;">
-    <p>&copy; 2025 Faiyaz | DevOps Enthusiast</p>
-  </footer>
 </body>
+
 </html>
