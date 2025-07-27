@@ -1,49 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Faiyaz Cloud Portfolio</title>
-  <link rel="stylesheet" href="static/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faiyaz | DevOps Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f54242;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .devops-logo {
+      width: 60px;
+      animation: spin 5s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .tool {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 120px;
+      transition: transform 0.3s;
+    }
+
+    .tool:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .tool i {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #f54242;
+    }
+
+    a {
+      color: #f54242;
+      text-decoration: none;
+    }
+
+    .journey {
+      margin-top: 3rem;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-left: 5px solid #f54242;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <h1><i class="fas fa-cloud"></i> Faiyaz Cloud Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="https://cdn-icons-png.flaticon.com/512/3297/3297841.png" alt="DevOps" class="devops-logo"/>
+    <h1>Faiyaz – DevOps Engineer</h1>
+    <p>Your journey from start to cloud</p>
   </header>
 
-  <section id="about" class="mover">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <p>Hi, I'm Faiyaz, a passionate DevOps Engineer specializing in automation, CI/CD, cloud architecture, and infrastructure as code.</p>
-  </section>
-
-  <section id="projects" class="mover">
-    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
-    <div class="project-card">
-      <h3>FinanceMe - Banking App</h3>
-      <p>CI/CD pipeline using Jenkins, Docker, Kubernetes, Prometheus & Grafana for a secure finance app.</p>
+  <div class="section">
+    <h2>🔧 DevOps Tools I Use</h2>
+    <div class="tools">
+      <a href="https://git-scm.com/" target="_blank" class="tool">
+        <i class="fab fa-git-alt"></i>
+        <div>Git</div>
+      </a>
+      <a href="https://github.com/" target="_blank" class="tool">
+        <i class="fab fa-github"></i>
+        <div>GitHub</div>
+      </a>
+      <a href="https://www.jenkins.io/" target="_blank" class="tool">
+        <i class="fas fa-cogs"></i>
+        <div>Jenkins</div>
+      </a>
+      <a href="https://www.docker.com/" target="_blank" class="tool">
+        <i class="fab fa-docker"></i>
+        <div>Docker</div>
+      </a>
+      <a href="https://kubernetes.io/" target="_blank" class="tool">
+        <i class="fas fa-network-wired"></i>
+        <div>Kubernetes</div>
+      </a>
+      <a href="https://www.ansible.com/" target="_blank" class="tool">
+        <i class="fas fa-terminal"></i>
+        <div>Ansible</div>
+      </a>
+      <a href="https://www.terraform.io/" target="_blank" class="tool">
+        <i class="fas fa-code"></i>
+        <div>Terraform</div>
+      </a>
+      <a href="https://prometheus.io/" target="_blank" class="tool">
+        <i class="fas fa-chart-line"></i>
+        <div>Prometheus</div>
+      </a>
+      <a href="https://grafana.com/" target="_blank" class="tool">
+        <i class="fas fa-chart-pie"></i>
+        <div>Grafana</div>
+      </a>
     </div>
-    <div class="project-card">
-      <h3>Medicure - Healthcare System</h3>
-      <p>Spring Boot microservices deployed on EKS with Ansible, Terraform, and dynamic monitoring.</p>
-    </div>
-  </section>
+  </div>
 
-  <section id="contact" class="mover">
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <p>Email: faiyaz@example.com</p>
-    <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Faiyaz. All rights reserved.</p>
-  </footer>
-
+  <div class="section journey">
+    <h2>🚀 My DevOps Journey</h2>
+    <p>
+      My journey into DevOps started with a heartfelt conversation with my best friend who was concerned about my career growth. 
+      She suggested the DevOps course at StarAgile – and that one recommendation changed my life. I started with Git and Linux basics, then explored CI/CD using Jenkins and Docker.
+      Over time, I mastered Kubernetes, Terraform, Ansible, and integrated monitoring using Prometheus and Grafana. I enjoy building automation pipelines, 
+      deploying reliable microservices, and always aim to deliver faster with confidence.
+    </p>
+  </div>
 </body>
 </html>
