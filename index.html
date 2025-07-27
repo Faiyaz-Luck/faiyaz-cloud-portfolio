@@ -1,3 +1,4 @@
+<!-- START OF ENHANCED VERSION -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,54 +74,38 @@
       gap: 2rem;
     }
 
-    .tool, .project {
+    .tool {
       background: #330000;
       border: 1px solid #cc0000;
       border-radius: 12px;
       padding: 1rem;
-      width: 200px;
+      width: 180px;
       text-align: center;
       transition: transform 0.3s ease;
-      cursor: pointer;
       box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
     }
 
-    .tool:hover, .project:hover {
+    .tool:hover {
       transform: scale(1.05);
       background: #4d0000;
     }
 
-    .tool i, .project i {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .tool i {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
       color: #ff6666;
     }
 
-    a {
+    .tool a {
+      display: block;
+      font-weight: bold;
       color: #ff9999;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .tool a:hover {
       color: #ff4d4d;
-    }
-
-    .install-section {
-      margin: 3rem auto;
-      padding: 1rem;
-      background: #1a0000;
-      border: 1px solid #ff1a1a;
-      border-radius: 8px;
-      max-width: 900px;
-    }
-
-    pre {
-      background: #000000;
-      color: #ffcccc;
-      padding: 1rem;
-      overflow-x: auto;
-      border-left: 4px solid #cc0000;
+      text-decoration: underline;
     }
 
     footer {
@@ -131,9 +116,8 @@
       color: #ff9999;
     }
 
-    /* Responsive */
     @media screen and (max-width: 768px) {
-      .tool, .project {
+      .tool {
         width: 100%;
       }
 
@@ -158,22 +142,55 @@
     </p>
   </header>
 
-  <!-- YOUR EXISTING ABOUT SECTION -->
   <section class="about">
     <h2>My DevOps Journey</h2>
-    <p>My journey began with a conversation with a close friend, who was deeply concerned about my career path. She introduced me to the world of DevOps through StarAgile.</p>
-    <p>With no IT background and fear of coding, I slowly discovered the power of automation, continuous integration, and cloud technologies.</p>
-    <p><strong>Past Work Experience (Non-IT):</strong><br>
-    Concentrix – Networking Agent (2016–2019)<br>
-    WNS – Sr Ops Associate<br>
-    CaratLane – Jewellery Expert</p>
+    <p>I began this journey thanks to a friend who introduced me to DevOps via StarAgile. Despite a non-IT background, I was drawn in by the power of automation, cloud, and containerization.</p>
+    <p><strong>Past Work Experience:</strong><br>
+    • Concentrix – Networking Agent (2016–2019)<br>
+    • WNS – Sr Ops Associate<br>
+    • CaratLane – Jewellery Expert</p>
   </section>
 
-  <!-- YOUR TOOLS, PROJECTS, INSTALL SECTIONS -->
-  <!-- (REUSE YOURS HERE, unchanged unless you want to simplify/condense) -->
+  <section>
+    <h2>DevOps Tools</h2>
+    <div class="tools">
+      <div class="tool">
+        <i class="fab fa-git-alt"></i>
+        <a href="https://git-scm.com/" target="_blank">Git</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-cogs"></i>
+        <a href="https://www.jenkins.io/" target="_blank">Jenkins</a>
+      </div>
+      <div class="tool">
+        <i class="fab fa-docker"></i>
+        <a href="https://www.docker.com/" target="_blank">Docker</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-project-diagram"></i>
+        <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-tools"></i>
+        <a href="https://www.ansible.com/" target="_blank">Ansible</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-code"></i>
+        <a href="https://www.terraform.io/" target="_blank">Terraform</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-chart-line"></i>
+        <a href="https://prometheus.io/" target="_blank">Prometheus</a>
+      </div>
+      <div class="tool">
+        <i class="fas fa-tachometer-alt"></i>
+        <a href="https://grafana.com/" target="_blank">Grafana</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Faiyaz - DevOps Portfolio | Built with 💚 DevOps
+    &copy; 2025 Faiyaz - DevOps Portfolio | Built with ❤️ DevOps & Passion
   </footer>
 
 </body>
