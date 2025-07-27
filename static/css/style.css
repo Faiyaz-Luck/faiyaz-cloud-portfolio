@@ -2,83 +2,92 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0a0f0d;
-  color: #c6f6d5;
-  line-height: 1.6;
+  color: #d4ffd4;
 }
 
 header {
-  background-color: #0f3d30;
+  background: linear-gradient(90deg, #013220, #025d3c);
   text-align: center;
   padding: 2rem 1rem;
-  color: #32cd32;
+  color: #ffffff;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.intro, .tools, .projects {
-  padding: 2rem;
+.tools, .journey, .projects {
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 h2 {
-  color: #50fa7b;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  color: #a4ffaf;
+  border-bottom: 2px solid #1fc27f;
+  padding-bottom: 0.5rem;
 }
 
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  justify-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
-.tool-grid img {
+.icon-grid img {
   width: 60px;
   height: 60px;
   transition: transform 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 5px;
 }
 
-.tool-grid img:hover {
+.icon-grid img:hover {
   transform: scale(1.2);
 }
 
-.project {
-  background-color: #142a1e;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 10px #1f8b4c;
+.journey p, .projects ul {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d0f5d0;
 }
 
-.project a {
-  color: #63ff6b;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project a:hover {
-  text-decoration: underline;
+.projects ul {
+  list-style: square;
+  padding-left: 1.5rem;
 }
 
 footer {
+  background-color: #013220;
   text-align: center;
   padding: 1rem;
-  background-color: #0f3d30;
-  color: #8fffa1;
-  font-size: 0.9rem;
+  color: #bfffd9;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
+a {
+  color: #82ffb8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .icon-grid img {
+    width: 45px;
+    height: 45px;
   }
 
-  .tool-grid img {
-    width: 40px;
-    height: 40px;
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects ul li, .journey p {
+    font-size: 1rem;
   }
 }
