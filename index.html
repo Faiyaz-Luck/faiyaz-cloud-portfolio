@@ -9,6 +9,16 @@
 </head>
 <body>
   <header class="hero">
+    <div class="theme-switcher">
+      <label for="themeSelect">🎨 Theme:</label>
+      <select id="themeSelect" onchange="changeTheme(this.value)">
+        <option value="yellow" selected>Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+      </select>
+    </div>
+
     <h1>Hi, I'm <span>Faiyaz</span></h1>
     <p>DevOps Engineer | Cloud Enthusiast</p>
     <a href="#projects" class="btn">View Projects</a>
@@ -16,7 +26,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate DevOps Engineer with experience in AWS, Jenkins, Docker, Terraform, Kubernetes, and more.</p>
+    <p>I am a passionate DevOps Engineer skilled in AWS, Jenkins, Docker, Kubernetes, Terraform, Ansible and more.</p>
   </section>
 
   <section id="projects">
@@ -24,10 +34,9 @@
     <div class="project-card">
       <i class="fa-brands fa-aws"></i>
       <h3>FinanceMe – CI/CD on AWS</h3>
-      <p>A complete CI/CD pipeline with Terraform, Jenkins, Docker, and EKS.</p>
+      <p>CI/CD pipeline using Jenkins, Docker, Terraform and Kubernetes on AWS EKS.</p>
       <a href="https://github.com/Faiyaz-Luck/FinanceMe">View Project</a>
     </div>
-    <!-- Add more projects similarly -->
   </section>
 
   <section id="contact">
@@ -39,5 +48,12 @@
   <footer>
     <p>&copy; 2025 Faiyaz. All rights reserved.</p>
   </footer>
+
+  <script>
+    function changeTheme(color) {
+      document.body.className = '';
+      document.body.classList.add(`theme-${color}`);
+    }
+  </script>
 </body>
 </html>
