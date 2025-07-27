@@ -1,93 +1,80 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0a0f0d;
-  color: #d4ffd4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1b12; /* Dark greenish-black */
+  color: #e0fbe2; /* Light green */
 }
 
 header {
-  background: linear-gradient(90deg, #013220, #025d3c);
+  background-color: #14a44d;
+  color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  color: #ffffff;
+  padding: 1.5rem 1rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.2em;
+  font-size: 2rem;
 }
 
-.tools, .journey, .projects {
-  padding: 2rem 1.5rem;
-  max-width: 1000px;
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 960px;
   margin: auto;
-}
-
-h2 {
-  color: #a4ffaf;
-  border-bottom: 2px solid #1fc27f;
-  padding-bottom: 0.5rem;
-}
-
-.icon-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
-.icon-grid img {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s ease;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 5px;
-}
-
-.icon-grid img:hover {
-  transform: scale(1.2);
 }
 
 .journey p, .projects ul {
   font-size: 1.1rem;
-  line-height: 1.7;
-  color: #d0f5d0;
+  line-height: 1.6;
 }
 
 .projects ul {
-  list-style: square;
-  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+.tools .tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.tools img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.tools img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px limegreen);
 }
 
 footer {
-  background-color: #013220;
   text-align: center;
   padding: 1rem;
-  color: #bfffd9;
+  background-color: #102a1f;
+  color: #aaa;
+  font-size: 0.9rem;
 }
 
-a {
-  color: #82ffb8;
-  text-decoration: none;
-}
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 600px) {
-  .icon-grid img {
+  .tools img {
     width: 45px;
     height: 45px;
   }
 
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .projects ul li, .journey p {
-    font-size: 1rem;
+  section {
+    padding: 1rem;
   }
 }
