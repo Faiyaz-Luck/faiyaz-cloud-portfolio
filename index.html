@@ -2,58 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faiyaz | DevOps Engineer</title>
-  <link rel="stylesheet" href="static/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiyaz - DevOps Portfolio</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="theme-switcher">
-      <label for="themeSelect">🎨 Theme:</label>
-      <select id="themeSelect" onchange="changeTheme(this.value)">
-        <option value="yellow" selected>Yellow</option>
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-        <option value="red">Red</option>
-      </select>
-    </div>
-
-    <h1>Hi, I'm <span>Faiyaz</span></h1>
-    <p>DevOps Engineer | Cloud Enthusiast</p>
-    <a href="#projects" class="btn">View Projects</a>
+  <header>
+    <h1>🚀 Faiyaz – DevOps Engineer</h1>
+    <p>Automating Infrastructure | CI/CD | Cloud Native</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate DevOps Engineer skilled in AWS, Jenkins, Docker, Kubernetes, Terraform, Ansible and more.</p>
+  <section class="about">
+    <h2>👨‍💻 About Me</h2>
+    <p>I am a passionate DevOps Engineer with expertise in AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, GitHub Actions, Prometheus, and Grafana. I love building scalable and reliable pipelines!</p>
   </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
+  <section class="projects">
+    <h2>💼 Projects</h2>
     <div class="project-card">
-      <i class="fa-brands fa-aws"></i>
-      <h3>FinanceMe – CI/CD on AWS</h3>
-      <p>CI/CD pipeline using Jenkins, Docker, Terraform and Kubernetes on AWS EKS.</p>
-      <a href="https://github.com/Faiyaz-Luck/FinanceMe">View Project</a>
+      <h3><i class="fas fa-cloud"></i> FinanceMe – Banking CI/CD Pipeline</h3>
+      <p>Built using Jenkins, Docker, Kubernetes on AWS with end-to-end automation and monitoring.</p>
+    </div>
+    <div class="project-card">
+      <h3><i class="fas fa-heartbeat"></i> Medicure – Healthcare Infra on AWS</h3>
+      <p>Used Terraform, EKS, Prometheus, Grafana to monitor real-time health app infrastructure.</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 faiyaz.devops@example.com</p>
-    <p>🔗 <a href="https://github.com/Faiyaz-Luck">GitHub</a> | <a href="#">LinkedIn</a></p>
+  <section class="tools">
+    <h2>🛠️ Tools I Work With</h2>
+    <div class="tools-icons">
+      <i class="fab fa-aws" title="AWS"></i>
+      <i class="fab fa-docker" title="Docker"></i>
+      <i class="fas fa-cogs" title="Jenkins"></i>
+      <i class="fas fa-code-branch" title="GitHub"></i>
+      <i class="fas fa-network-wired" title="Kubernetes"></i>
+      <i class="fas fa-infinity" title="CI/CD"></i>
+      <i class="fas fa-clipboard-check" title="Ansible"></i>
+      <i class="fas fa-database" title="Prometheus"></i>
+      <i class="fas fa-chart-line" title="Grafana"></i>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Faiyaz. All rights reserved.</p>
+    <p>🔗 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub</a> | 🌐 <a href="#">LinkedIn</a></p>
+    <p>© 2025 Faiyaz</p>
   </footer>
-
-  <script>
-    function changeTheme(color) {
-      document.body.className = '';
-      document.body.classList.add(`theme-${color}`);
-    }
-  </script>
 </body>
 </html>
