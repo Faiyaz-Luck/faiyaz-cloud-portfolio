@@ -3,6 +3,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   background-color: #000;
   color: #fff;
+  transition: background 0.5s ease, color 0.5s ease;
   scroll-behavior: smooth;
 }
 
@@ -10,17 +11,24 @@ header.hero {
   background: #111;
   padding: 100px 20px;
   text-align: center;
+  position: relative;
+}
+
+.theme-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 header.hero h1 span {
-  color: #FFD700;
+  color: var(--accent);
 }
 
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #FFD700;
+  background: var(--accent);
   color: #000;
   text-decoration: none;
   border-radius: 5px;
@@ -28,7 +36,7 @@ header.hero h1 span {
 }
 
 .btn:hover {
-  background: #ffc107;
+  background: var(--accent-hover);
 }
 
 section {
@@ -40,7 +48,7 @@ section {
   background: #222;
   margin: 20px auto;
   padding: 20px;
-  border-left: 5px solid #FFD700;
+  border-left: 5px solid var(--accent);
   width: 80%;
   max-width: 600px;
   border-radius: 8px;
@@ -49,7 +57,7 @@ section {
 
 .project-card i {
   font-size: 2rem;
-  color: #FFD700;
+  color: var(--accent);
 }
 
 footer {
@@ -59,7 +67,35 @@ footer {
   color: #888;
 }
 
+/* Fade-in animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* THEME VARIABLES */
+
+:root {
+  --accent: #FFD700;
+  --accent-hover: #ffc107;
+}
+
+body.theme-yellow {
+  --accent: #FFD700;
+  --accent-hover: #ffc107;
+}
+
+body.theme-blue {
+  --accent: #00BFFF;
+  --accent-hover: #3399FF;
+}
+
+body.theme-green {
+  --accent: #00FA9A;
+  --accent-hover: #20C997;
+}
+
+body.theme-red {
+  --accent: #FF6347;
+  --accent-hover: #FF4500;
 }
