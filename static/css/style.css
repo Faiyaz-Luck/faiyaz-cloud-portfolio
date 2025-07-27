@@ -1,59 +1,98 @@
 body {
+  background: #0a0a0a;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f0f0f;
-  color: #fff;
-  line-height: 1.6;
+  padding: 0;
 }
 
 header {
-  background-color: #e50914;
-  color: #fff;
+  background: #ff0000;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.journey, .experience, .tools {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem 2rem;
-  background: #1c1c1c;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
-}
-
-h2 {
-  color: #e50914;
-  text-align: center;
-}
-
-.icons {
+.logo {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 2.5rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.icons i {
-  color: #e50914;
-  transition: transform 0.4s ease;
+.logo img {
+  height: 80px;
+  width: 80px;
+  animation: float 4s ease-in-out infinite;
 }
 
-.spin-hover:hover {
-  transform: rotate(360deg);
+h1 {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about p, .about ul {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tools {
+  background: #111;
+  padding: 3rem 2rem;
+}
+
+.tools h2 {
+  color: #ff4d4d;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tool {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tool:hover {
+  transform: scale(1.05) rotate(2deg);
+  background-color: #ff1a1a;
+}
+
+.tool i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer {
+  background: #222;
+  color: #aaa;
   text-align: center;
-  background: #1a1a1a;
   padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 3rem;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.spin-hover:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
 }
