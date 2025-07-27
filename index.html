@@ -1,113 +1,59 @@
-body {
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #0f0f0f;
-  color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud Wish - DevOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>☁️ Cloud Wish - Faiyaz's DevOps Portfolio</h1>
+    <p class="subtitle">DevOps Engineer | CI/CD | AWS | Kubernetes | Terraform | Docker</p>
+  </header>
 
-header {
-  background-color: #FFD700;
-  color: #000;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 5px solid #000;
-}
+  <section class="about">
+    <h2>🚀 My DevOps Journey</h2>
+    <ul class="timeline">
+      <li><strong>2021:</strong> Started learning Linux and Git basics</li>
+      <li><strong>2022:</strong> Mastered Docker, Jenkins, and AWS EC2</li>
+      <li><strong>2023:</strong> Built CI/CD pipelines using Jenkins + Docker + Kubernetes</li>
+      <li><strong>2024:</strong> Completed real-time finance and healthcare DevOps projects</li>
+    </ul>
+  </section>
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
+  <section class="projects">
+    <h2>📂 My Projects</h2>
+    <div class="card">
+      <h3>FinanceMe - Banking CI/CD</h3>
+      <p>Automated pipeline using Jenkins, Docker, Ansible, Terraform & EKS.</p>
+      <a href="https://github.com/Faiyaz-Luck/financeme-ci-cd" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h3>Medicure - Healthcare DevOps</h3>
+      <p>Cloud-native deployment with Terraform, Kubernetes & Grafana monitoring.</p>
+      <a href="https://github.com/Faiyaz-Luck/medicure-devops" target="_blank">View Project</a>
+    </div>
+  </section>
 
-header p {
-  margin: 0.5rem 0 0;
-  font-size: 1.2rem;
-}
+  <section class="tools">
+    <h2>🛠️ Tools I Work With</h2>
+    <div class="tools-grid">
+      <a href="https://git-scm.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /></a>
+      <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /></a>
+      <a href="https://www.docker.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" /></a>
+      <a href="https://kubernetes.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" /></a>
+      <a href="https://www.terraform.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" /></a>
+      <a href="https://aws.amazon.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" /></a>
+      <a href="https://www.jenkins.io/" target="_blank"><img src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" alt="Jenkins" /></a>
+      <a href="https://grafana.com/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/grafana.svg" alt="Grafana" /></a>
+      <a href="https://prometheus.io/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/prometheus.svg" alt="Prometheus" /></a>
+    </div>
+  </section>
 
-section {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h2 {
-  border-bottom: 3px solid #FFD700;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
-
-.about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-  align-items: center;
-}
-
-.tools-grid img {
-  width: 60px;
-  height: auto;
-  transition: transform 0.3s ease;
-  filter: drop-shadow(0 0 4px yellow);
-}
-
-.tools-grid img:hover {
-  transform: scale(1.2);
-}
-
-.projects .project {
-  background-color: #1a1a1a;
-  border-left: 5px solid #FFD700;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.projects .project:hover {
-  background-color: #262626;
-}
-
-.projects .btn {
-  display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.5rem 1rem;
-  background-color: #FFD700;
-  color: #000;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.projects .btn:hover {
-  background-color: #e6c200;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #111;
-  border-top: 3px solid #FFD700;
-  font-size: 0.9rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .tools-grid img {
-    width: 50px;
-  }
-
-  .projects .project {
-    padding: 1rem;
-  }
-}
+  <footer>
+    <p>&copy; 2025 Cloud Wish - Built by Faiyaz Anu</p>
+  </footer>
+</body>
+</html>
