@@ -1,90 +1,84 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom, #e0f7fa, #a5d6a7);
-  color: #003366;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0f0d;
+  color: #c6f6d5;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #004d40;
-  color: #ffffff;
+  background-color: #0f3d30;
   text-align: center;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 2rem 1rem;
+  color: #32cd32;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-header p {
-  font-style: italic;
-}
-
-section {
+.intro, .tools, .projects {
   padding: 2rem;
-  margin: 1rem auto;
-  max-width: 1000px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: #00695c;
+  color: #50fa7b;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-.tool-icons {
-  display: flex;
-  flex-wrap: wrap;
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-items: center;
 }
 
-.tool-icons img {
+.tool-grid img {
   width: 60px;
   height: 60px;
-  transition: transform 0.3s ease-in-out;
-  filter: drop-shadow(2px 2px 4px #999);
+  transition: transform 0.3s ease;
 }
 
-.tool-icons img:hover {
+.tool-grid img:hover {
   transform: scale(1.2);
 }
 
-.projects ul {
-  list-style-type: none;
-  padding: 0;
+.project {
+  background-color: #142a1e;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #1f8b4c;
 }
 
-.projects li {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #ccc;
+.project a {
+  color: #63ff6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 1.5rem;
-  background: #004d40;
-  color: white;
-  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #0f3d30;
+  color: #8fffa1;
   font-size: 0.9rem;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
-  .tool-icons img {
-    width: 45px;
-    height: 45px;
-  }
-
-  section {
-    padding: 1rem;
+  .tool-grid img {
+    width: 40px;
+    height: 40px;
   }
 }
