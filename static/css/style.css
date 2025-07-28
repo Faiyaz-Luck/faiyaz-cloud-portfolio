@@ -1,196 +1,214 @@
-/* Global Styles */
+/* General Styles */
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0a0a0a;
-  color: #00ff88;
-  scroll-behavior: smooth;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Header */
 header {
+  background-color: #0a0a0a;
+  padding: 40px 10px;
   text-align: center;
-  padding: 30px 20px 10px;
-  background-color: #0f0f0f;
-  border-bottom: 1px solid #00ff88;
-}
-
-.devops-gif {
-  width: 80px; /* Smaller size */
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00ff88;
-  margin-bottom: 10px;
-  animation: pulseGlow 2s infinite;
-  transition: transform 0.3s ease-in-out;
-}
-
-.devops-gif:hover {
-  transform: scale(1.05);
-}
-
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 0 10px #00ff88;
-  }
-  50% {
-    box-shadow: 0 0 20px #00ff88;
-  }
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin: 10px 0 5px;
-  color: #ffffff;
+  color: #00ff88;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ff88;
 }
 
 header p {
-  font-size: 1rem;
-  color: #00ff88;
+  color: #ccc;
+  font-size: 1.2em;
 }
 
-/* Sections */
+/* Section */
 section {
   padding: 40px 20px;
-  text-align: center;
-  border-bottom: 1px solid #00ff88;
+  max-width: 1100px;
+  margin: auto;
 }
 
 section h2 {
   color: #00ff88;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
   border-bottom: 2px solid #00ff88;
-  display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 2em;
 }
 
-section p {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-}
-
-/* Tool Icons */
-.tool-icons {
+/* Tools Grid */
+.tools {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
-  margin-top: 20px;
 }
 
-.tool-icons a img {
-  width: 60px;
-  height: 60px;
+.tool {
+  text-align: center;
+  color: #fff;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 15px;
+  width: 120px;
   transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #111;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 10px rgba(0,255,136,0.1);
 }
 
-.tool-icons a img:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 20px #00ff88;
+.tool:hover {
+  background-color: #2e2e2e;
+  transform: scale(1.07);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.tool i {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+  color: #00ff88;
+}
+
+.tool p {
+  font-size: 0.9em;
 }
 
 /* Project Cards */
-.project-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-
 .project-card {
-  background: #1a1a1a;
-  border: 1px solid #00ff88;
-  padding: 20px;
-  border-radius: 12px;
-  width: 280px;
-  text-align: left;
-  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #1c1c1c;
+  padding: 25px;
+  margin: 20px 0;
+  border-left: 4px solid #00ff88;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,136,0.1);
+  transition: transform 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px #00ff88;
 }
 
 .project-card h3 {
-  color: #ffffff;
-  margin-bottom: 10px;
+  color: #00ff88;
 }
 
 .project-card a {
-  color: #00ff88;
+  color: #ff4444;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background-color: #0f0f0f;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  color: #00ff88;
-  border-top: 1px solid #00ff88;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+}
+
+footer a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Welcome Popup */
-#welcomePopup {
-  display: none;
+.popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #0d0d0d;
-  border: 2px solid #00ff88;
-  padding: 30px;
-  border-radius: 15px;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
-  text-align: center;
-  color: #00ff88;
-  box-shadow: 0 0 25px #00ff88;
+  animation: fadeIn 1s ease-in-out;
 }
 
-#welcomePopup img {
+.popup-content {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00ff88;
+  max-width: 420px;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.popup-content img {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 0 15px #00ff88;
 }
 
-#welcomePopup h2 {
-  margin-top: 0;
+.popup-content h2 {
   color: #00ff88;
+  margin-bottom: 15px;
 }
 
-#welcomePopup button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #00ff88;
-  border: 2px solid #00ff88;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.popup-content p {
+  color: #ccc;
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 
-#welcomePopup button:hover {
+.popup-content button {
+  padding: 12px 25px;
   background-color: #00ff88;
+  border: none;
   color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Floating DevOps GIF at bottom right */
-.floating-gif {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 70px;
-  height: auto;
-  opacity: 0.9;
-  z-index: 999;
-  border-radius: 8px;
+.popup-content button:hover {
+  background-color: #00cc66;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .tool {
+    width: 100px;
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
