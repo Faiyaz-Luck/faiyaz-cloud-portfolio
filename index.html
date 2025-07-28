@@ -5,41 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faiyaz DevOps Portfolio</title>
 
-  <!-- Font Awesome CDN for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Inline CSS (you can move this to style.css if needed) -->
+  <!-- Styles -->
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
       background-color: #0b0b0b;
-      color: #f8f8f8;
+      color: #f0f0f0;
     }
 
     header {
       text-align: center;
       background-color: maroon;
-      color: white;
       padding: 2rem;
+      color: white;
     }
 
     h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 2.5rem;
     }
 
     .subheading {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-top: 0.5rem;
+      color: #ddd;
     }
 
     section {
       padding: 2rem;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #222;
     }
 
     h2 {
@@ -48,9 +49,12 @@
     }
 
     ul {
-      list-style: none;
-      padding-left: 0;
-      line-height: 1.8;
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
     }
 
     .project-grid {
@@ -60,43 +64,44 @@
     }
 
     .project-card {
-      background-color: #1c1c1c;
+      background-color: #1e1e1e;
       padding: 1rem;
       border-radius: 10px;
       text-decoration: none;
-      color: white;
-      transition: transform 0.3s, box-shadow 0.3s;
+      color: #fff;
       border: 1px solid maroon;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
+      transform: scale(1.03);
       box-shadow: 0 0 10px maroon;
     }
 
-    .tool-grid, .tools {
+    .tools {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 1rem;
       text-align: center;
     }
 
-    .tools .tool {
-      color: white;
-      text-decoration: none;
+    .tool {
       background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 10px;
       padding: 1rem;
-      transition: all 0.3s ease;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid #333;
+      color: white;
+      transition: all 0.3s ease-in-out;
     }
 
-    .tools .tool:hover {
+    .tool:hover {
       box-shadow: 0 0 12px maroon;
       background-color: #2a2a2a;
+      transform: translateY(-5px);
     }
 
-    .tools i {
+    .tool i {
       font-size: 2rem;
       margin-bottom: 0.5rem;
       color: maroon;
@@ -105,8 +110,8 @@
     footer {
       background-color: maroon;
       color: white;
-      padding: 1rem;
       text-align: center;
+      padding: 1rem;
     }
 
     a {
@@ -130,34 +135,34 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate DevOps engineer with hands-on experience in implementing complete CI/CD pipelines, containerized deployments, infrastructure automation, and monitoring solutions across various cloud platforms and environments.</p>
+    <p>I am a passionate DevOps engineer skilled in designing, automating, and optimizing deployments using CI/CD pipelines, cloud infrastructure, and monitoring solutions.</p>
   </section>
 
   <section id="devops-sdlc">
     <h2>DevOps in SDLC Lifecycle</h2>
     <ul>
-      <li><strong>Planning:</strong> Collaboration using Jira/GitHub Projects</li>
-      <li><strong>Development:</strong> Version control via Git, collaborative coding</li>
-      <li><strong>Build:</strong> Automated with Jenkins, Maven</li>
-      <li><strong>Testing:</strong> Automated testing with Selenium, JUnit</li>
-      <li><strong>Release:</strong> Packaging with Docker & Ansible</li>
-      <li><strong>Deploy:</strong> Automated deployment with Kubernetes & Terraform</li>
-      <li><strong>Monitor:</strong> Observability using Prometheus & Grafana</li>
+      <li><strong>📌 Planning:</strong> Agile collaboration via Jira, GitHub Projects</li>
+      <li><strong>💻 Development:</strong> Code versioning with Git & collaboration</li>
+      <li><strong>🔧 Build:</strong> Automated with Jenkins, Maven, and Docker</li>
+      <li><strong>🧪 Testing:</strong> Continuous testing using Selenium, JUnit</li>
+      <li><strong>🚀 Release:</strong> Docker & Ansible for packaging and delivery</li>
+      <li><strong>📦 Deploy:</strong> Kubernetes and Terraform for cloud rollout</li>
+      <li><strong>📈 Monitor:</strong> Real-time observability with Prometheus & Grafana</li>
     </ul>
   </section>
 
   <section id="roadmap">
-    <h2>DevOps Roadmap</h2>
+    <h2>DevOps Roadmap (2025)</h2>
     <ul>
-      <li>🔧 Master Linux & Shell Scripting</li>
-      <li>🔗 Git & GitHub for Source Control</li>
-      <li>⚙️ Jenkins CI/CD Integration</li>
-      <li>🐳 Docker for Containerization</li>
-      <li>☸️ Kubernetes for Orchestration</li>
-      <li>📦 Ansible for Configuration Management</li>
-      <li>🌐 Terraform for Infrastructure as Code</li>
-      <li>📊 Monitoring with Prometheus & Grafana</li>
-      <li>☁️ AWS Cloud Deployments</li>
+      <li>🖥️ Linux & Shell scripting for automation basics</li>
+      <li>🔗 Git & GitHub for Source Code Management</li>
+      <li>⚙️ Jenkins for Continuous Integration (CI)</li>
+      <li>🐳 Docker for creating containerized applications</li>
+      <li>☸️ Kubernetes for orchestration and scaling</li>
+      <li>📦 Ansible for managing configuration at scale</li>
+      <li>🌐 Terraform for Infrastructure as Code (IaC)</li>
+      <li>📊 Prometheus & Grafana for monitoring and dashboards</li>
+      <li>☁️ Cloud Platforms (AWS/GCP) for real deployment</li>
     </ul>
   </section>
 
@@ -165,16 +170,16 @@
     <h2>Projects</h2>
     <div class="project-grid">
       <a href="https://github.com/Faiyaz-Luck/Finance-project" class="project-card" target="_blank">
-        <h3>Finance Project</h3>
-        <p>DevOps Pipeline with Jenkins, Docker, Terraform on AWS</p>
+        <h3>💼 Finance Project</h3>
+        <p>CI/CD with Jenkins, Docker & AWS using Terraform</p>
       </a>
       <a href="https://github.com/Faiyaz-Luck/healthcare-project" class="project-card" target="_blank">
-        <h3>Healthcare Project</h3>
-        <p>CI/CD pipeline with Kubernetes, Prometheus & Grafana</p>
+        <h3>🏥 Healthcare Project</h3>
+        <p>Kubernetes deployment with monitoring stack</p>
       </a>
       <a href="https://github.com/Faiyaz-Luck/insurance-project" class="project-card" target="_blank">
-        <h3>Insurance Project</h3>
-        <p>Automated deployment & monitoring with Ansible & EKS</p>
+        <h3>📋 Insurance Project</h3>
+        <p>Infrastructure automation using Ansible & EKS</p>
       </a>
     </div>
   </section>
@@ -182,9 +187,9 @@
   <section id="tools">
     <h2>DevOps Tools</h2>
     <div class="tools">
-      <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
+      <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version Control</p></a>
       <a class="tool" href="https://www.jenkins.io/" target="_blank"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
-      <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
+      <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containers</p></a>
       <a class="tool" href="https://kubernetes.io/" target="_blank"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
       <a class="tool" href="https://www.ansible.com/" target="_blank"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
       <a class="tool" href="https://www.terraform.io/" target="_blank"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>IaC</p></a>
@@ -197,5 +202,6 @@
     <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
     <p>© 2025 Faiyaz DevOps Portfolio</p>
   </footer>
+
 </body>
 </html>
