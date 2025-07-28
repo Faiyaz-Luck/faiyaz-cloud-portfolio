@@ -15,12 +15,17 @@ header {
   border-bottom: 1px solid #00ff88;
 }
 
-header img {
-  max-width: 120px;
+.devops-gif {
+  width: 100px; /* Smaller size */
   border-radius: 12px;
   box-shadow: 0 0 15px #00ff88;
   margin-bottom: 10px;
   animation: pulseGlow 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.devops-gif:hover {
+  transform: scale(1.05);
 }
 
 @keyframes pulseGlow {
@@ -188,5 +193,9 @@ footer {
 
   .project-card {
     width: 90%;
+  }
+
+  .devops-gif {
+    width: 80px;
   }
 }
