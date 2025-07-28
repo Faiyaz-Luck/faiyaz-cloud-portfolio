@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d0d0d; /* Black background */
+  background-color: #0b0014; /* Pure blackish-purple */
   color: #e0e0e0;
 }
 
 header {
   text-align: center;
   padding: 40px 20px 20px;
-  background-color: #1a1a2e; /* Dark purple-black */
-  color: #c77dff; /* Soft purple */
+  background-color: #200030; /* Deep purple-black */
+  color: #c77dff;
 }
 
 h1 {
@@ -28,7 +28,7 @@ section {
 
 h2 {
   text-align: center;
-  color: #c77dff;
+  color: #d9a7ff; /* Light purple */
   margin-bottom: 30px;
 }
 
@@ -42,34 +42,33 @@ h2 {
 
 .project-card,
 .tool-card {
-  background-color: #1f1f1f;
+  background-color: #1a0b25; /* Darker purple background */
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(199, 125, 255, 0.2);
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  width: 250px;
+  width: 270px;
 }
 
 .project-card:hover,
 .tool-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(199, 125, 255, 0.4);
+  box-shadow: 0 0 25px rgba(199, 125, 255, 0.5);
 }
 
 .project-card img,
 .tool-card img {
-  width: 180px;         /* Increased width */
-  height: 100px;        /* Increased height */
+  width: 220px;         /* Increased icon size */
+  height: 120px;        /* Increased height */
   object-fit: contain;
   background-color: #ffffff1a;
   border-radius: 14px;
   margin-bottom: 12px;
-  padding: 10px;
-  box-shadow: 0 0 12px rgba(199, 125, 255, 0.5);
+  padding: 12px;
+  box-shadow: 0 0 14px rgba(199, 125, 255, 0.6);
   transition: transform 0.3s ease;
 }
-
 
 .project-card img:hover,
 .tool-card img:hover {
@@ -79,7 +78,7 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1a1a2e;
+  background-color: #200030;
   color: #c7c7c7;
   margin-top: 40px;
   font-size: 14px;
@@ -92,7 +91,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(13, 13, 13, 0.95);
+  background: rgba(11, 0, 20, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,17 +99,17 @@ footer {
 }
 
 .popup-content {
-  background-color: #1a1a2e;
+  background-color: #1f0b2d;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(199, 125, 255, 0.5);
+  box-shadow: 0 0 22px rgba(199, 125, 255, 0.6);
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .popup-content h2 {
   margin-top: 0;
-  color: #c77dff;
+  color: #d9a7ff;
 }
 
 .popup-content button {
@@ -137,7 +136,7 @@ footer {
   opacity: 0.9;
   z-index: 999;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.6);
 }
 
 /* Responsive */
@@ -146,6 +145,17 @@ footer {
   .tools-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-card,
+  .tool-card {
+    width: 90%;
+  }
+
+  .project-card img,
+  .tool-card img {
+    width: 90%;
+    height: auto;
   }
 }
 
