@@ -1,207 +1,222 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faiyaz DevOps Portfolio</title>
-
-  <!-- Font Awesome Icons -->
+  <title>CloudWish DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0b0b0b;
-      color: #f0f0f0;
-    }
-
-    header {
-      text-align: center;
-      background-color: maroon;
-      padding: 2rem;
-      color: white;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin: 0;
-    }
-
-    .subheading {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #ddd;
-    }
-
-    section {
-      padding: 2rem;
-      border-bottom: 1px solid #222;
-    }
-
-    h2 {
-      color: #ff4d4d;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 1rem;
-    }
-
-    ul li {
-      margin-bottom: 0.8rem;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .project-card {
-      background-color: #1e1e1e;
-      padding: 1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #fff;
-      border: 1px solid maroon;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 10px maroon;
-    }
-
-    .tools {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1rem;
-      text-align: center;
-    }
-
-    .tool {
-      background: #1a1a1a;
-      padding: 1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      border: 1px solid #333;
-      color: white;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .tool:hover {
-      box-shadow: 0 0 12px maroon;
-      background-color: #2a2a2a;
-      transform: translateY(-5px);
-    }
-
-    .tool i {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: maroon;
-    }
-
-    footer {
-      background-color: maroon;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    a {
-      color: #ffb3b3;
-    }
-  </style>
-
-  <!-- Welcome Alert -->
-  <script>
-    window.onload = function () {
-      alert("👋 Welcome to Faiyaz's DevOps Portfolio!");
-    };
-  </script>
 </head>
 <body>
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Welcome Icon" />
+      <p>Welcome to CloudWish - DevOps Portfolio!</p>
+      <button onclick="closePopup()">Let's Explore</button>
+    </div>
+  </div>
 
+  <!-- Header -->
   <header>
-    <h1>Faiyaz's Cloud DevOps Journey</h1>
-    <p class="subheading">Building Scalable, Secure, and Automated Cloud Solutions</p>
+    <h1>CloudWish</h1>
+    <p>My DevOps Journey, Tools & Projects</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate DevOps engineer skilled in designing, automating, and optimizing deployments using CI/CD pipelines, cloud infrastructure, and monitoring solutions.</p>
-  </section>
-
-  <section id="devops-sdlc">
-    <h2>DevOps in SDLC Lifecycle</h2>
-    <ul>
-      <li><strong>📌 Planning:</strong> Agile collaboration via Jira, GitHub Projects</li>
-      <li><strong>💻 Development:</strong> Code versioning with Git & collaboration</li>
-      <li><strong>🔧 Build:</strong> Automated with Jenkins, Maven, and Docker</li>
-      <li><strong>🧪 Testing:</strong> Continuous testing using Selenium, JUnit</li>
-      <li><strong>🚀 Release:</strong> Docker & Ansible for packaging and delivery</li>
-      <li><strong>📦 Deploy:</strong> Kubernetes and Terraform for cloud rollout</li>
-      <li><strong>📈 Monitor:</strong> Real-time observability with Prometheus & Grafana</li>
-    </ul>
-  </section>
-
-  <section id="roadmap">
-    <h2>DevOps Roadmap (2025)</h2>
-    <ul>
-      <li>🖥️ Linux & Shell scripting for automation basics</li>
-      <li>🔗 Git & GitHub for Source Code Management</li>
-      <li>⚙️ Jenkins for Continuous Integration (CI)</li>
-      <li>🐳 Docker for creating containerized applications</li>
-      <li>☸️ Kubernetes for orchestration and scaling</li>
-      <li>📦 Ansible for managing configuration at scale</li>
-      <li>🌐 Terraform for Infrastructure as Code (IaC)</li>
-      <li>📊 Prometheus & Grafana for monitoring and dashboards</li>
-      <li>☁️ Cloud Platforms (AWS/GCP) for real deployment</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <a href="https://github.com/Faiyaz-Luck/Finance-project" class="project-card" target="_blank">
-        <h3>💼 Finance Project</h3>
-        <p>CI/CD with Jenkins, Docker & AWS using Terraform</p>
-      </a>
-      <a href="https://github.com/Faiyaz-Luck/healthcare-project" class="project-card" target="_blank">
-        <h3>🏥 Healthcare Project</h3>
-        <p>Kubernetes deployment with monitoring stack</p>
-      </a>
-      <a href="https://github.com/Faiyaz-Luck/insurance-project" class="project-card" target="_blank">
-        <h3>📋 Insurance Project</h3>
-        <p>Infrastructure automation using Ansible & EKS</p>
-      </a>
-    </div>
-  </section>
-
-  <section id="tools">
+  <!-- DevOps Tools Section -->
+  <section class="tools-section">
     <h2>DevOps Tools</h2>
     <div class="tools">
-      <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version Control</p></a>
-      <a class="tool" href="https://www.jenkins.io/" target="_blank"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
-      <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containers</p></a>
-      <a class="tool" href="https://kubernetes.io/" target="_blank"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
-      <a class="tool" href="https://www.ansible.com/" target="_blank"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
-      <a class="tool" href="https://www.terraform.io/" target="_blank"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>IaC</p></a>
-      <a class="tool" href="https://prometheus.io/" target="_blank"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
-      <a class="tool" href="https://grafana.com/" target="_blank"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboard</p></a>
+      <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p>Git</p></a>
+      <a class="tool" href="https://www.jenkins.io/" target="_blank"><i class="fas fa-code-branch"></i><p>Jenkins</p></a>
+      <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p>Docker</p></a>
+      <a class="tool" href="https://kubernetes.io/" target="_blank"><i class="fas fa-project-diagram"></i><p>Kubernetes</p></a>
+      <a class="tool" href="https://www.ansible.com/" target="_blank"><i class="fas fa-cogs"></i><p>Ansible</p></a>
+      <a class="tool" href="https://www.terraform.io/" target="_blank"><i class="fas fa-code"></i><p>Terraform</p></a>
+      <a class="tool" href="https://prometheus.io/" target="_blank"><i class="fas fa-chart-line"></i><p>Prometheus</p></a>
+      <a class="tool" href="https://grafana.com/" target="_blank"><i class="fas fa-tachometer-alt"></i><p>Grafana</p></a>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank" class="project">Finance Project</a>
+      <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank" class="project">Healthcare Project</a>
+      <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank" class="project">Insurance Project</a>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="roadmap-section">
+    <h2>DevOps Roadmap</h2>
+    <ul>
+      <li>Source Code Management with Git</li>
+      <li>CI/CD Pipeline with Jenkins</li>
+      <li>Build & Push Docker Images</li>
+      <li>Provision Infra using Terraform</li>
+      <li>Configure Infra with Ansible</li>
+      <li>Deploy to K8s Clusters</li>
+      <li>Monitor with Prometheus & Grafana</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
-    <p>© 2025 Faiyaz DevOps Portfolio</p>
+    <p>Contact: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a> | GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
   </footer>
 
+  <script>
+    function closePopup() {
+      document.getElementById("welcomePopup").style.display = "none";
+    }
+    window.onload = function () {
+      document.getElementById("welcomePopup").style.display = "flex";
+    };
+  </script>
 </body>
 </html>
+
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+header {
+  background-color: #4b0000;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tool {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 120px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.tool:hover {
+  transform: scale(1.1);
+  background-color: maroon;
+}
+
+.tool i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project {
+  background-color: #262626;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: maroon;
+}
+
+.roadmap-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmap-section li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: maroon;
+  text-decoration: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 300px;
+  animation: popIn 0.6s ease;
+}
+
+.popup-content img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.popup-content button {
+  padding: 0.5rem 1rem;
+  background-color: maroon;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
