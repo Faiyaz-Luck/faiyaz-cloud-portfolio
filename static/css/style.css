@@ -1,108 +1,13 @@
-/* Reset */
-* {
+body {
+  background-color: #0f0f0f;
+  color: #00ffcc;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark gradient */
-  color: #f0f0f0;
-  padding: 30px;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
+h1 {
   text-align: center;
-  margin-bottom: 40px;
-  background: #111;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,255,200,0.2);
-}
-
-header h1 {
-  font-size: 2.5em;
-  color: #00ffe5;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #cccccc;
-}
-
-/* Section layout */
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #00ffe5;
-  border-bottom: 2px solid #00ffc3;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* DevOps tool grid */
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  gap: 25px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.tool-grid img {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(0 0 4px #00ffc3);
-}
-
-.tool-grid img:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 10px #00ffc3);
-}
-
-/* Project cards */
-.project {
-  background: #1c1c1c;
-  border-left: 4px solid #00ffcc;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(0, 255, 150, 0.4);
-}
-
-.project h3 {
-  color: #00ffd1;
-  margin-bottom: 10px;
-}
-
-.project p {
-  color: #dddddd;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #00ffe5;
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #999;
-  font-size: 0.9em;
+  margin-top: 50px;
+  font-size: 2.5rem;
 }
