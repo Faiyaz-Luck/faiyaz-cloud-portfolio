@@ -59,16 +59,17 @@ h2 {
 
 .project-card img,
 .tool-card img {
-  width: 150px;
-  height: 80px;
+  width: 180px;         /* Increased width */
+  height: 100px;        /* Increased height */
   object-fit: contain;
-  background-color: #ffffff1a; /* light semi-transparent background */
-  border-radius: 12px;
-  margin-bottom: 10px;
-  padding: 8px;
-  box-shadow: 0 0 8px rgba(199, 125, 255, 0.4);
+  background-color: #ffffff1a;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  padding: 10px;
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.5);
   transition: transform 0.3s ease;
 }
+
 
 .project-card img:hover,
 .tool-card img:hover {
