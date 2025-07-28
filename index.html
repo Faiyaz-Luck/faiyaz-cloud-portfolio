@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CloudWish - DevOps Portfolio</title>
-  <link rel="stylesheet" href="static/css/style.css" />
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7186/7186653.png" />
+<link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
 
-  <!-- Welcome Popup -->
-  <div id="welcomePopup" class="popup">
-    <div class="popup-content">
-      <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" alt="Welcome DevOps GIF" />
-      <h2>Welcome to CloudWish!</h2>
-      <p>Explore my DevOps journey, tools, and live projects</p>
-      <button onclick="closePopup()">Let's Start 🚀</button>
-    </div>
+<body>
+  <div class="welcome">
+    <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="DevOps Welcome GIF">
+    <h1>Welcome to CloudWish</h1>
+    <p>Your gateway to my DevOps journey</p>
   </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Hi, I'm Faiyaz 👋</h1>
-    <p>I'm a DevOps Engineer with experience in automating infrastructures using Git, Jenkins, Docker, Kubernetes, Terraform, and more. I streamline CI/CD pipelines to accelerate deployments and ensure scalable, secure environments.</p>
-  </header>
-
-  <!-- DevOps Journey Section -->
-  <section class="intro">
-    <h2>😤 My DevOps Journey</h2>
+  <section class="about">
+    <h2>My DevOps Journey</h2>
     <p>
-      I started as a Linux enthusiast and grew into a DevOps Engineer through continuous learning and hands-on projects. My journey includes mastering CI/CD pipelines, containerization, cloud infrastructure, and monitoring solutions. I’ve worked on enterprise-grade automation, reducing deployment time from hours to minutes.
+      Hello! I'm <strong>Faiyaz</strong>, a passionate DevOps engineer who transitioned from a traditional IT background
+      into the world of cloud and automation. I started my journey with basic scripting, then explored Linux,
+      version control with Git, and eventually mastered tools like Jenkins, Docker, Kubernetes, and infrastructure
+      as code with Terraform and Ansible. Over the years, I’ve worked on multiple projects in healthcare, finance,
+      and insurance domains, leading CI/CD implementations, automating deployments, and setting up monitoring with
+      Prometheus and Grafana.
     </p>
-    <p>Currently exploring GitOps and cloud-native solutions.</p>
+    <p>
+      With hands-on experience in real-time projects like:
+      <ul>
+        <li><a href="https://github.com/Faiyaz-Luck/Finance-project">Finance Project</a></li>
+        <li><a href="https://github.com/Faiyaz-Luck/healthcare-project">Healthcare Project</a></li>
+        <li><a href="https://github.com/Faiyaz-Luck/insurance-project">Insurance Project</a></li>
+      </ul>
+    </p>
   </section>
 
-  <!-- Workflow Section -->
-  <section class="workflow">
-    <h2>🔁 DevOps Workflow</h2>
-    <img src="https://d1.awsstatic.com/product-marketing/DevOps/DevOps_overview_diagram.8d8c5d5a6b9b99e8c0b2cf3cd2b6f6f145348a51.png" alt="DevOps Workflow Diagram">
-    <p>This diagram represents how I implement DevOps principles across development and operations using industry-standard tools.</p>
+  <section>
+    <h2>DevOps Overview</h2>
+    <p>
+      DevOps is a culture and practice that brings together development and operations teams to automate and integrate
+      the processes of software delivery and infrastructure management. It emphasizes collaboration, continuous
+      integration, continuous delivery, and automated monitoring for rapid and reliable product releases.
+    </p>
   </section>
 
-  <!-- Tools Section -->
-  <section class="tools-section">
-    <h2>⚙️ DevOps Tools</h2>
+  <section>
+    <h2>DevOps Tools</h2>
     <div class="tools">
-      <a class="tool" href="https://git-scm.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/><p>Git</p></a>
-      <a class="tool" href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/><p>GitHub</p></a>
-      <a class="tool" href="https://www.jenkins.io/" target="_blank"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins"/><p>Jenkins</p></a>
-      <a class="tool" href="https://www.docker.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/><p>Docker</p></a>
-      <a class="tool" href="https://kubernetes.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/><p>Kubernetes</p></a>
-      <a class="tool" href="https://www.ansible.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"/><p>Ansible</p></a>
-      <a class="tool" href="https://www.terraform.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"/><p>Terraform</p></a>
-      <a class="tool" href="https://prometheus.io/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969052.png" alt="Prometheus"/><p>Prometheus</p></a>
-      <a class="tool" href="https://grafana.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="Grafana"/><p>Grafana</p></a>
+      <a class="tool" href="#git"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
+      <a class="tool" href="#jenkins"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
+      <a class="tool" href="#docker"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
+      <a class="tool" href="#kubernetes"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
+      <a class="tool" href="#ansible"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
+      <a class="tool" href="#terraform"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>Infra as Code</p></a>
+      <a class="tool" href="#prometheus"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
+      <a class="tool" href="#grafana"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboarding</p></a>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <h2>📂 Projects</h2>
-    <div class="project-grid">
-      <a class="project-card" href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">💰 Finance Project</a>
-      <a class="project-card" href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">🏥 Healthcare Project</a>
-      <a class="project-card" href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">📄 Insurance Project</a>
-    </div>
+  <section>
+    <h2>DevOps Workflow</h2>
+    <img src="468a0d86-cb2c-493c-a2c2-e19e2f3fa4ad.png" alt="DevOps Workflow" class="workflow-img">
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
+    <p>📧 abdulfaiyaz.shukor@gmail.com | <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
   </footer>
-
-  <script>
-    function closePopup() {
-      document.getElementById('welcomePopup').style.display = 'none';
-    }
-    window.onload = function () {
-      document.getElementById('welcomePopup').style.display = 'flex';
-    };
-  </script>
-
 </body>
+
 </html>
