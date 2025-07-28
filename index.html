@@ -12,25 +12,24 @@
 <!-- Welcome Popup -->
 <div id="welcomePopup" class="popup">
   <div class="popup-content">
-    <img src="https://i.pinimg.com/originals/1a/ae/48/1aae4807d8ddf61b41515a585e7b2490.gif" 
-         alt="DevOps Infinity Loop" 
-         style="max-width: 100%; border-radius: 10px; margin-bottom: 20px;" />
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="https://cdn.dribbble.com/users/2455953/screenshots/7052040/devops.gif" 
+         alt="Welcome DevOps" 
+         class="popup-gif" />
     <h2>Welcome to CloudWish - Faiyaz DevOps Portfolio!</h2>
     <p>Explore my journey, tools, and real-world projects.</p>
-    <button onclick="closePopup()">Enter</button>
   </div>
 </div>
 
 <header>
   <div class="header-container">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXF3dmlqNDh0YnV6Mnl1dzY2d2Q4NTY0djd3bzdubXJjcnAzM25uMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4FkC2VqpeNRHjTDQ5/giphy.gif"
+    <img src="https://cdn.dribbble.com/users/2455953/screenshots/7052040/devops.gif"
          alt="DevOps Loop"
          class="devops-gif" />
     <h1>CloudWish</h1>
     <p>🚀 Empowering the world through DevOps</p>
   </div>
 </header>
-
 
 <section class="overview">
   <h2>DevOps Overview</h2>
@@ -89,16 +88,22 @@
 
 <!-- Floating DevOps GIF at bottom right -->
 <img src="https://cdn.dribbble.com/users/2455953/screenshots/7052040/devops.gif" 
-     alt="DevOps" 
-     style="position: fixed; bottom: 20px; right: 20px; width: 100px; opacity: 0.9; z-index: 999; border-radius: 10px; box-shadow: 0 0 10px rgba(0,255,0,0.4);" />
+     alt="Floating DevOps" 
+     class="floating-devops-gif" />
 
 <footer>
   <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
 </footer>
 
 <script>
+  window.onload = function () {
+    document.getElementById("welcomePopup").classList.add("show");
+  };
+
   function closePopup() {
-    document.getElementById("welcomePopup").style.display = "none";
+    const popup = document.getElementById("welcomePopup");
+    popup.classList.remove("show");
+    setTimeout(() => popup.style.display = 'none', 300);
   }
 </script>
 
