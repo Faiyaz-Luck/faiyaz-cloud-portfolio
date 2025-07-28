@@ -184,18 +184,13 @@ footer {
   color: #000;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .tool-icons, .project-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 90%;
-  }
-
-  .devops-gif {
-    width: 80px;
-  }
-}
+/* Floating DevOps GIF at bottom right */
+.floating-gif {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 70px;
+  height: auto;
+  opacity: 0.9;
+  z-index: 999;
+  border-radius: 8px;
