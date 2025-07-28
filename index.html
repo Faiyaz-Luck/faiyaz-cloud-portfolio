@@ -2,74 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cloud Wish - DevOps Portfolio</title>
-<link rel="stylesheet" href="static/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudWish - DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <!-- Welcome Popup -->
-  <div id="welcomePopup" class="popup">
+  <div id="popup" class="popup">
     <div class="popup-content">
-      <img src="https://cdn-icons-png.flaticon.com/512/186/186296.png" alt="Infinity Icon" />
-      <h2>Welcome to CloudWish!</h2>
-      <p>Explore my DevOps journey, tools, and project portfolio.</p>
-      <button onclick="closePopup()">Let's Start 🚀</button>
+      <h2>👋 Welcome to CloudWish</h2>
+      <p>This is a DevOps journey portfolio by Faiyaz Anu.</p>
+      <button onclick="closePopup()">Enter Site</button>
     </div>
   </div>
 
-  <header>☁️ Cloud Wish - DevOps Portfolio</header>
-
-  <section id="about" class="section">
-    <h2 class="section-title">👨‍💻 About Me</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
-      I'm Faiyaz, a passionate DevOps Engineer who transitioned from non-IT roles into cloud-native development and operations.
-      With dedication and upskilling, I've mastered CI/CD pipelines, infrastructure automation, and monitoring.
-    </p>
-    <p style="text-align: center; max-width: 700px; margin: 1rem auto;">
-      💡 My DevOps journey began on 29-Nov-2024 at StarAgile and completed on 10-Mar-2025. I’ve since worked on hands-on projects in finance, healthcare, and insurance domains.
-    </p>
-  </section>
-
-  <section id="devops-tools" class="section">
-    <h2 class="section-title">⚙️ DevOps Tools I Work With</h2>
-    <div class="tools-grid">
-      <a href="https://git-scm.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" alt="Git" /><span>Git</span></a>
-      <a href="https://github.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" /><span>GitHub</span></a>
-      <a href="https://www.jenkins.io" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jenkins.svg" alt="Jenkins" /><span>Jenkins</span></a>
-      <a href="https://www.docker.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" alt="Docker" /><span>Docker</span></a>
-      <a href="https://kubernetes.io" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kubernetes.svg" alt="Kubernetes" /><span>Kubernetes</span></a>
-      <a href="https://www.ansible.com/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/ansible.svg" alt="Ansible" /><span>Ansible</span></a>
-      <a href="https://www.terraform.io/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/terraform.svg" alt="Terraform" /><span>Terraform</span></a>
-      <a href="https://prometheus.io/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prometheus.svg" alt="Prometheus" /><span>Prometheus</span></a>
-      <a href="https://grafana.com/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/grafana.svg" alt="Grafana" /><span>Grafana</span></a>
+  <!-- Animated Banner -->
+  <section class="animated-banner">
+    <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="DevOps GIF" />
+    <div class="banner-text">
+      <h1>Welcome to CloudWish 🚀</h1>
+      <p>Crafting DevOps magic from scripts to scalable cloud!</p>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <h2 class="section-title">📂 DevOps Project Overview</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
-      I have implemented real-world CI/CD pipelines across different industries:
+  <!-- DevOps Journey -->
+  <section class="journey">
+    <h2>My DevOps Journey</h2>
+    <p>
+      From learning Linux commands to managing Kubernetes clusters and CI/CD pipelines, I have walked the path of DevOps
+      with persistence and passion. Below are tools I use daily:
     </p>
-    <ul style="max-width: 600px; margin: 1rem auto; line-height: 1.6;">
-      <li>💰 <strong>Finance Project</strong> – Automated deployment and monitoring with Prometheus + Grafana.</li>
-      <li>🏥 <strong>Healthcare Project</strong> – Scalable containerized services with Docker & Kubernetes.</li>
-      <li>📄 <strong>Insurance Project</strong> – Infrastructure as Code with Terraform & Ansible for cloud provisioning.</li>
-    </ul>
   </section>
 
+  <!-- DevOps Tools Grid -->
+  <section class="tools">
+    <div class="tool" onclick="location.href='https://git-scm.com/'">Git</div>
+    <div class="tool" onclick="location.href='https://github.com/'">GitHub</div>
+    <div class="tool" onclick="location.href='https://www.jenkins.io/'">Jenkins</div>
+    <div class="tool" onclick="location.href='https://www.docker.com/'">Docker</div>
+    <div class="tool" onclick="location.href='https://kubernetes.io/'">Kubernetes</div>
+    <div class="tool" onclick="location.href='https://www.ansible.com/'">Ansible</div>
+    <div class="tool" onclick="location.href='https://www.terraform.io/'">Terraform</div>
+    <div class="tool" onclick="location.href='https://prometheus.io/'">Prometheus</div>
+    <div class="tool" onclick="location.href='https://grafana.com/'">Grafana</div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Faiyaz | Cloud Wish DevOps Portfolio |
-    <a href="mailto:abdulfaiyaz.shukor@gmail.com" style="color: #ffcc00;">Contact Me</a>
+    <p>📧 abdulfaiyaz.shukor@gmail.com | <a href="https://github.com/Faiyaz-Luck">GitHub Profile</a></p>
   </footer>
 
   <script>
     function closePopup() {
-      document.getElementById('welcomePopup').style.display = 'none';
+      document.getElementById("popup").style.display = "none";
     }
-    window.onload = function () {
-      document.getElementById('welcomePopup').style.display = 'flex';
-    };
   </script>
 </body>
 </html>
