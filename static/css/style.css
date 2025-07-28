@@ -59,7 +59,7 @@ h2 {
 
 .project-card img,
 .tool-card img {
-  width: 80px;
+  width: 150px;
   height: 80px;
   object-fit: contain;
   background-color: #ffffff1a; /* light semi-transparent background */
