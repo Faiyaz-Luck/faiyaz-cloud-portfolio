@@ -1,113 +1,42 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0f0f0f, #0e2e12);
-  color: #e0ffe1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #ffffff;
 }
 
+/* Header */
 header {
-  background: #0e2e12;
-  color: #00ff88;
+  background: linear-gradient(to right, #0b3d0b, #1a751a);
+  padding: 30px 10px;
   text-align: center;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 255, 100, 0.2);
 }
 
 header h1 {
   font-size: 2.5rem;
-  animation: float 2s ease-in-out infinite;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px #00ff88;
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
+/* Section Layout */
 section {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h2 {
-  color: #90ee90;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.tools-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.tools-grid img {
-  width: 70px;
-  height: 70px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-}
-
-.tools-grid img:hover {
-  transform: scale(1.3) rotate(5deg);
-  box-shadow: 0 0 20px #00ff88;
-}
-
-.project-list {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.project-card {
-  background: #123823;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 255, 136, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
-}
-
-.project-card a {
-  color: #00ff88;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
+  padding: 40px 20px;
   text-align: center;
-  padding: 1rem;
-  background: #0e2e12;
-  color: #90ee90;
-  font-size: 0.9rem;
 }
 
-/* Animations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+section h2 {
+  font-size: 2rem;
+  color: #00ff88;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ff88;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .tools-grid img {
-    width: 50px;
-    height: 50px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-}
+/* About & Journey */
+.about p, .journey p {
+  font-size: 1rem;
+  max-width: 8
