@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CloudWish - DevOps Portfolio</title>
-<link rel="stylesheet" href="static/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Wish - DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="welcome">
-    <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="DevOps Welcome GIF">
-    <h1>Welcome to CloudWish</h1>
-    <p>Your gateway to my DevOps journey</p>
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <img src="https://cdn-icons-png.flaticon.com/512/186/186296.png" alt="Infinity Icon" />
+      <h2>Welcome to CloudWish!</h2>
+      <p>Explore my DevOps journey, tools, and project portfolio.</p>
+      <button onclick="closePopup()">Let's Start 🚀</button>
+    </div>
   </div>
 
-  <section class="about">
-    <h2>My DevOps Journey</h2>
-    <p>
-      Hello! I'm <strong>Faiyaz</strong>, a passionate DevOps engineer who transitioned from a traditional IT background
-      into the world of cloud and automation. I started my journey with basic scripting, then explored Linux,
-      version control with Git, and eventually mastered tools like Jenkins, Docker, Kubernetes, and infrastructure
-      as code with Terraform and Ansible. Over the years, I’ve worked on multiple projects in healthcare, finance,
-      and insurance domains, leading CI/CD implementations, automating deployments, and setting up monitoring with
-      Prometheus and Grafana.
+  <header>☁️ Cloud Wish - DevOps Portfolio</header>
+
+  <section id="about" class="section">
+    <h2 class="section-title">👨‍💻 About Me</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+      I'm Faiyaz, a passionate DevOps Engineer who transitioned from non-IT roles into cloud-native development and operations.
+      With dedication and upskilling, I've mastered CI/CD pipelines, infrastructure automation, and monitoring.
     </p>
-    <p>
-      With hands-on experience in real-time projects like:
-      <ul>
-        <li><a href="https://github.com/Faiyaz-Luck/Finance-project">Finance Project</a></li>
-        <li><a href="https://github.com/Faiyaz-Luck/healthcare-project">Healthcare Project</a></li>
-        <li><a href="https://github.com/Faiyaz-Luck/insurance-project">Insurance Project</a></li>
-      </ul>
+    <p style="text-align: center; max-width: 700px; margin: 1rem auto;">
+      💡 My DevOps journey began on 29-Nov-2024 at StarAgile and completed on 10-Mar-2025. I’ve since worked on hands-on projects in finance, healthcare, and insurance domains.
     </p>
   </section>
 
-  <section>
-    <h2>DevOps Overview</h2>
-    <p>
-      DevOps is a culture and practice that brings together development and operations teams to automate and integrate
-      the processes of software delivery and infrastructure management. It emphasizes collaboration, continuous
-      integration, continuous delivery, and automated monitoring for rapid and reliable product releases.
-    </p>
-  </section>
-
-  <section>
-    <h2>DevOps Tools</h2>
-    <div class="tools">
-      <a class="tool" href="#git"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
-      <a class="tool" href="#jenkins"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
-      <a class="tool" href="#docker"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
-      <a class="tool" href="#kubernetes"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
-      <a class="tool" href="#ansible"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
-      <a class="tool" href="#terraform"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>Infra as Code</p></a>
-      <a class="tool" href="#prometheus"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
-      <a class="tool" href="#grafana"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboarding</p></a>
+  <section id="devops-tools" class="section">
+    <h2 class="section-title">⚙️ DevOps Tools I Work With</h2>
+    <div class="tools-grid">
+      <a href="https://git-scm.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" alt="Git" /><span>Git</span></a>
+      <a href="https://github.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" /><span>GitHub</span></a>
+      <a href="https://www.jenkins.io" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jenkins.svg" alt="Jenkins" /><span>Jenkins</span></a>
+      <a href="https://www.docker.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" alt="Docker" /><span>Docker</span></a>
+      <a href="https://kubernetes.io" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kubernetes.svg" alt="Kubernetes" /><span>Kubernetes</span></a>
+      <a href="https://www.ansible.com/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/ansible.svg" alt="Ansible" /><span>Ansible</span></a>
+      <a href="https://www.terraform.io/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/terraform.svg" alt="Terraform" /><span>Terraform</span></a>
+      <a href="https://prometheus.io/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prometheus.svg" alt="Prometheus" /><span>Prometheus</span></a>
+      <a href="https://grafana.com/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/grafana.svg" alt="Grafana" /><span>Grafana</span></a>
     </div>
   </section>
 
-  <section>
-    <h2>DevOps Workflow</h2>
-    <img src="468a0d86-cb2c-493c-a2c2-e19e2f3fa4ad.png" alt="DevOps Workflow" class="workflow-img">
+  <section id="projects" class="section">
+    <h2 class="section-title">📂 DevOps Project Overview</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+      I have implemented real-world CI/CD pipelines across different industries:
+    </p>
+    <ul style="max-width: 600px; margin: 1rem auto; line-height: 1.6;">
+      <li>💰 <strong>Finance Project</strong> – Automated deployment and monitoring with Prometheus + Grafana.</li>
+      <li>🏥 <strong>Healthcare Project</strong> – Scalable containerized services with Docker & Kubernetes.</li>
+      <li>📄 <strong>Insurance Project</strong> – Infrastructure as Code with Terraform & Ansible for cloud provisioning.</li>
+    </ul>
   </section>
 
   <footer>
-    <p>📧 abdulfaiyaz.shukor@gmail.com | <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
+    &copy; 2025 Faiyaz | Cloud Wish DevOps Portfolio |
+    <a href="mailto:abdulfaiyaz.shukor@gmail.com" style="color: #ffcc00;">Contact Me</a>
   </footer>
-</body>
 
+  <script>
+    function closePopup() {
+      document.getElementById('welcomePopup').style.display = 'none';
+    }
+    window.onload = function () {
+      document.getElementById('welcomePopup').style.display = 'flex';
+    };
+  </script>
+</body>
 </html>
