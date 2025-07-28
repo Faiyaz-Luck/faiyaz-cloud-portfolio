@@ -21,6 +21,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 3rem;
+  color: #ffd700;
 }
 
 header p {
@@ -48,7 +49,7 @@ header p {
   border: 2px solid #ffd700;
   border-radius: 10px;
   padding: 1rem;
-  width: 150px;
+  width: 120px;
   text-align: center;
   transition: transform 0.3s, background-color 0.3s;
 }
@@ -66,10 +67,8 @@ header p {
 
 .workflow img {
   max-width: 100%;
-  height: auto;
-  border-radius: 10px;
   border: 2px solid #ffd700;
-  margin-top: 1rem;
+  border-radius: 10px;
 }
 
 .project-grid {
@@ -134,8 +133,8 @@ footer {
 }
 
 .popup button {
-  background-color: #aa0000;
-  color: white;
+  background-color: #ffd700;
+  color: black;
   padding: 0.7rem 2rem;
   border: none;
   font-size: 1rem;
@@ -146,5 +145,5 @@ footer {
 }
 
 .popup button:hover {
-  background-color: #cc0000;
+  background-color: #e6c200;
 }
