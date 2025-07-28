@@ -13,14 +13,14 @@ header {
   background-color: #0a0a0a;
   padding: 40px 10px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 4px 20px rgba(162, 89, 255, 0.3);
 }
 
 header h1 {
-  color: #00ff88;
+  color: #a259ff;
   font-size: 3em;
   margin-bottom: 10px;
-  text-shadow: 0 0 10px #00ff88;
+  text-shadow: 0 0 10px #a259ff;
 }
 
 header p {
@@ -36,8 +36,8 @@ section {
 }
 
 section h2 {
-  color: #00ff88;
-  border-bottom: 2px solid #00ff88;
+  color: #a259ff;
+  border-bottom: 2px solid #a259ff;
   padding-bottom: 10px;
   margin-bottom: 25px;
   font-size: 2em;
@@ -59,19 +59,19 @@ section h2 {
   border-radius: 15px;
   width: 120px;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px rgba(0,255,136,0.1);
+  box-shadow: 0 0 10px rgba(162, 89, 255, 0.15);
 }
 
 .tool:hover {
   background-color: #2e2e2e;
   transform: scale(1.07);
-  box-shadow: 0 0 15px #00ff88;
+  box-shadow: 0 0 15px #a259ff;
 }
 
 .tool i {
   font-size: 2.5em;
   margin-bottom: 8px;
-  color: #00ff88;
+  color: #a259ff;
 }
 
 .tool p {
@@ -83,9 +83,9 @@ section h2 {
   background: #1c1c1c;
   padding: 25px;
   margin: 20px 0;
-  border-left: 4px solid #00ff88;
+  border-left: 4px solid #a259ff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,255,136,0.1);
+  box-shadow: 0 0 10px rgba(162, 89, 255, 0.15);
   transition: transform 0.3s;
 }
 
@@ -94,11 +94,11 @@ section h2 {
 }
 
 .project-card h3 {
-  color: #00ff88;
+  color: #a259ff;
 }
 
 .project-card a {
-  color: #ff4444;
+  color: #ff5c8d;
   text-decoration: none;
   font-weight: bold;
 }
@@ -116,7 +116,7 @@ footer {
 }
 
 footer a {
-  color: #00ccff;
+  color: #a259ff;
   text-decoration: none;
 }
 
@@ -142,7 +142,7 @@ footer a:hover {
   background-color: #1a1a1a;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 25px #00ff88;
+  box-shadow: 0 0 25px #a259ff;
   max-width: 420px;
   animation: scaleUp 0.5s ease-in-out;
 }
@@ -151,11 +151,11 @@ footer a:hover {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 0 15px #00ff88;
+  box-shadow: 0 0 15px #a259ff;
 }
 
 .popup-content h2 {
-  color: #00ff88;
+  color: #a259ff;
   margin-bottom: 15px;
 }
 
@@ -167,7 +167,7 @@ footer a:hover {
 
 .popup-content button {
   padding: 12px 25px;
-  background-color: #00ff88;
+  background-color: #a259ff;
   border: none;
   color: #000;
   font-weight: bold;
@@ -177,7 +177,7 @@ footer a:hover {
 }
 
 .popup-content button:hover {
-  background-color: #00cc66;
+  background-color: #9333ea;
   transform: scale(1.05);
 }
 
