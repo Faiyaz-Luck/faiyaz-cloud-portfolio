@@ -3,78 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CloudWish | DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <title>Faiyaz DevOps Portfolio</title>
+
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Inline CSS (you can move this to style.css if needed) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0b0b0b;
+      color: #f8f8f8;
+    }
+
+    header {
+      text-align: center;
+      background-color: maroon;
+      color: white;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .subheading {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid #333;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background-color: #1c1c1c;
+      padding: 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid maroon;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px maroon;
+    }
+
+    .tool-grid, .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .tools .tool {
+      color: white;
+      text-decoration: none;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .tools .tool:hover {
+      box-shadow: 0 0 12px maroon;
+      background-color: #2a2a2a;
+    }
+
+    .tools i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: maroon;
+    }
+
+    footer {
+      background-color: maroon;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    a {
+      color: #ffb3b3;
+    }
+  </style>
+
+  <!-- Welcome Alert -->
   <script>
     window.onload = function () {
-      alert("👋 Welcome to CloudWish — A DevOps Portfolio by Faiyaz!");
+      alert("👋 Welcome to Faiyaz's DevOps Portfolio!");
     };
   </script>
 </head>
 <body>
+
   <header>
-    <h1>CloudWish</h1>
-    <p class="tagline">Transforming Ideas into DevOps Reality</p>
+    <h1>Faiyaz's Cloud DevOps Journey</h1>
+    <p class="subheading">Building Scalable, Secure, and Automated Cloud Solutions</p>
   </header>
 
-  <section class="about">
-    <h2>My DevOps Journey</h2>
-    <p>I’m Abdul Faiyaz, a passionate DevOps Engineer. From understanding Linux fundamentals to mastering CI/CD, containerization, and cloud orchestration, I've implemented DevOps practices across real-world finance, healthcare, and insurance domains.</p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate DevOps engineer with hands-on experience in implementing complete CI/CD pipelines, containerized deployments, infrastructure automation, and monitoring solutions across various cloud platforms and environments.</p>
   </section>
 
-  <section class="devops-tools">
-    <h2>DevOps Tools</h2>
-    <div class="tool-icons">
-      <a href="https://git-scm.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></a>
-      <a href="https://github.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-      <a href="https://www.jenkins.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></a>
-      <a href="https://www.docker.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></a>
-      <a href="https://kubernetes.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></a>
-      <a href="https://www.ansible.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"></a>
-      <a href="https://www.terraform.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></a>
-      <a href="https://prometheus.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus"></a>
-      <a href="https://grafana.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"></a>
-    </div>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Finance Project</h3>
-      <p>CI/CD pipeline using Jenkins, Docker, Kubernetes, and Prometheus.</p>
-      <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Healthcare Project</h3>
-      <p>Automated deployments with monitoring and cloud provisioning.</p>
-      <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Insurance Project</h3>
-      <p>Implemented secure CI/CD and infrastructure automation.</p>
-      <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
-    </div>
-  </section>
-
-  <section class="roadmap">
-    <h2>DevOps Roadmap</h2>
+  <section id="devops-sdlc">
+    <h2>DevOps in SDLC Lifecycle</h2>
     <ul>
-      <li>🔧 Version Control & Collaboration — Git & GitHub</li>
-      <li>🛠️ Build Automation — Maven & Jenkins</li>
-      <li>🐳 Containerization — Docker</li>
-      <li>☸️ Orchestration — Kubernetes (EKS)</li>
-      <li>📦 Configuration Management — Ansible</li>
-      <li>🏗️ Infrastructure as Code — Terraform</li>
-      <li>📊 Monitoring & Alerting — Prometheus & Grafana</li>
+      <li><strong>Planning:</strong> Collaboration using Jira/GitHub Projects</li>
+      <li><strong>Development:</strong> Version control via Git, collaborative coding</li>
+      <li><strong>Build:</strong> Automated with Jenkins, Maven</li>
+      <li><strong>Testing:</strong> Automated testing with Selenium, JUnit</li>
+      <li><strong>Release:</strong> Packaging with Docker & Ansible</li>
+      <li><strong>Deploy:</strong> Automated deployment with Kubernetes & Terraform</li>
+      <li><strong>Monitor:</strong> Observability using Prometheus & Grafana</li>
     </ul>
   </section>
 
+  <section id="roadmap">
+    <h2>DevOps Roadmap</h2>
+    <ul>
+      <li>🔧 Master Linux & Shell Scripting</li>
+      <li>🔗 Git & GitHub for Source Control</li>
+      <li>⚙️ Jenkins CI/CD Integration</li>
+      <li>🐳 Docker for Containerization</li>
+      <li>☸️ Kubernetes for Orchestration</li>
+      <li>📦 Ansible for Configuration Management</li>
+      <li>🌐 Terraform for Infrastructure as Code</li>
+      <li>📊 Monitoring with Prometheus & Grafana</li>
+      <li>☁️ AWS Cloud Deployments</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <a href="https://github.com/Faiyaz-Luck/Finance-project" class="project-card" target="_blank">
+        <h3>Finance Project</h3>
+        <p>DevOps Pipeline with Jenkins, Docker, Terraform on AWS</p>
+      </a>
+      <a href="https://github.com/Faiyaz-Luck/healthcare-project" class="project-card" target="_blank">
+        <h3>Healthcare Project</h3>
+        <p>CI/CD pipeline with Kubernetes, Prometheus & Grafana</p>
+      </a>
+      <a href="https://github.com/Faiyaz-Luck/insurance-project" class="project-card" target="_blank">
+        <h3>Insurance Project</h3>
+        <p>Automated deployment & monitoring with Ansible & EKS</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>DevOps Tools</h2>
+    <div class="tools">
+      <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
+      <a class="tool" href="https://www.jenkins.io/" target="_blank"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
+      <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
+      <a class="tool" href="https://kubernetes.io/" target="_blank"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
+      <a class="tool" href="https://www.ansible.com/" target="_blank"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
+      <a class="tool" href="https://www.terraform.io/" target="_blank"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>IaC</p></a>
+      <a class="tool" href="https://prometheus.io/" target="_blank"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
+      <a class="tool" href="https://grafana.com/" target="_blank"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboard</p></a>
+    </div>
+  </section>
+
   <footer>
-    <p>📧 Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
-    <p>🔗 GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">github.com/Faiyaz-Luck</a></p>
+    <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
+    <p>© 2025 Faiyaz DevOps Portfolio</p>
   </footer>
 </body>
 </html>
