@@ -1,13 +1,87 @@
 body {
-  background-color: #0f0f0f;
-  color: #00ffcc;
-  font-family: 'Segoe UI', sans-serif;
+  background: #000; /* Dark background */
+  color: #00ff99;   /* Neon green text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1 {
+header {
+  background: #001a0f;
   text-align: center;
-  margin-top: 50px;
-  font-size: 2.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px #00ff99;
+}
+
+h1, h2 {
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99;
+}
+
+p, li, a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffcc;
+  transition: 0.3s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00ff99;
+}
+
+section {
+  padding: 2rem;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+.projects li {
+  margin: 0.5rem 0;
+}
+
+.tool-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.tool-icons img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff99;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tool-icons img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 30px #00ff99;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #001a0f;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .tool-icons {
+    gap: 0.5rem;
+  }
+  .tool-icons img {
+    width: 50px;
+    height: 50px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
