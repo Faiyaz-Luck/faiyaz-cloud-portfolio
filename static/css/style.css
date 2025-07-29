@@ -32,12 +32,18 @@ h2 {
   margin-bottom: 30px;
 }
 
-.project-container,
-.tools-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 /* Tool & Project Cards */
@@ -45,11 +51,11 @@ h2 {
 .tool-card {
   background-color: #1f1f1f;
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 0 10px rgba(199, 125, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  width: 220px;
+  width: 300px;
 }
 
 .project-card:hover,
@@ -81,12 +87,12 @@ h2 {
 .tool-card h3 {
   margin: 10px 0 5px;
   color: #c77dff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .tool-card p {
   color: #aaa;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -182,9 +188,9 @@ footer {
 
 /* Enlarged Font Awesome Icons in DevOps Tool Section */
 .tools .tool i {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: #3b82f6;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .tools .tool i:hover {
