@@ -186,12 +186,17 @@ footer {
   }
 }
 
-/* Enlarged Font Awesome Icons in DevOps Tool Section */
+/* Enlarged and Centered Font Awesome Icons in DevOps Tool Section */
 .tool-card i {
-  font-size: 5rem;
+  font-size: 7rem;
   color: #3b82f6;
-  margin-bottom: 15px;
-  display: block;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
 }
 
 .tool-card i:hover {
