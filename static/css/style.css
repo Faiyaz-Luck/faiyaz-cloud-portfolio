@@ -47,6 +47,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 /* Tool & Project Cards */
