@@ -187,13 +187,14 @@ footer {
 }
 
 /* Enlarged Font Awesome Icons in DevOps Tool Section */
-.tools .tool i {
+.tool-card i {
   font-size: 5rem;
   color: #3b82f6;
   margin-bottom: 15px;
+  display: block;
 }
 
-.tools .tool i:hover {
+.tool-card i:hover {
   color: #c77dff;
   transform: scale(1.2);
   transition: 0.3s ease;
