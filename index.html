@@ -2,102 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CloudWish - DevOps Portfolio</title>
-  <link rel="stylesheet" href="static/css/style.css?v=2" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="dark-theme">
+<body>
+  <header>
+    <h1><i class="fas fa-cloud"></i> CloudWish</h1>
+    <p>Your DevOps Journey Portfolio</p>
+  </header>
 
-<!-- Welcome Popup -->
-<div id="welcomePopup" class="popup">
-  <div class="popup-content">
-    <img src="https://i.pinimg.com/originals/1a/ae/48/1aae4807d8ddf61b41515a585e7b2490.gif" 
-         alt="DevOps Infinity Loop" 
-         style="max-width: 100%; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 15px #c77dff;" />
-    <h2 style="color: #c77dff;">Welcome to CloudWish - Faiyaz's DevOps Portfolio!</h2>
-    <p>Explore my DevOps journey, tools, and real-world projects 🚀</p>
-    <button onclick="closePopup()">Enter</button>
-  </div>
-</div>
+  <section class="intro">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This portfolio highlights my journey and projects in DevOps, including CI/CD, cloud deployments, infrastructure as code, and monitoring.</p>
+  </section>
 
-<header>
-  <img src="https://cdn.dribbble.com/users/2455953/screenshots/7052040/devops.gif" 
-       alt="DevOps Loop" 
-       style="width: 120px; vertical-align: middle; border-radius: 10px; box-shadow: 0 0 10px rgba(199,125,255,0.5); margin-bottom: 10px;" />
-  <h1>CloudWish</h1>
-  <p>🚀 Empowering the world through DevOps</p>
-</header>
+  <section>
+    <h2>DevOps Tools</h2>
+    <div class="tools-container">
+      <a class="tool-card" href="https://git-scm.com/" target="_blank">
+        <i class="fab fa-git-alt"></i>
+        <p><strong>Git</strong><br>Version control</p>
+      </a>
+      <a class="tool-card" href="https://www.jenkins.io/" target="_blank">
+        <i class="fas fa-code-branch"></i>
+        <p><strong>Jenkins</strong><br>CI/CD</p>
+      </a>
+      <a class="tool-card" href="https://www.docker.com/" target="_blank">
+        <i class="fab fa-docker"></i>
+        <p><strong>Docker</strong><br>Containerization</p>
+      </a>
+      <a class="tool-card" href="https://kubernetes.io/" target="_blank">
+        <i class="fas fa-project-diagram"></i>
+        <p><strong>Kubernetes</strong><br>Orchestration</p>
+      </a>
+      <a class="tool-card" href="https://www.ansible.com/" target="_blank">
+        <i class="fas fa-cogs"></i>
+        <p><strong>Ansible</strong><br>Config Mgmt</p>
+      </a>
+      <a class="tool-card" href="https://www.terraform.io/" target="_blank">
+        <i class="fas fa-code"></i>
+        <p><strong>Terraform</strong><br>Infra as Code</p>
+      </a>
+      <a class="tool-card" href="https://prometheus.io/" target="_blank">
+        <i class="fas fa-chart-line"></i>
+        <p><strong>Prometheus</strong><br>Monitoring</p>
+      </a>
+      <a class="tool-card" href="https://grafana.com/" target="_blank">
+        <i class="fas fa-tachometer-alt"></i>
+        <p><strong>Grafana</strong><br>Dashboarding</p>
+      </a>
+    </div>
+  </section>
 
-<section class="overview">
-  <h2>DevOps Overview</h2>
-  <p>
-    DevOps is a cultural and technical movement that aims to unify software development (Dev)
-    and software operation (Ops). It emphasizes automation, continuous delivery,
-    and collaboration between teams to rapidly deliver high-quality software.
-  </p>
-</section>
+  <section>
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>FinanceMe</h3>
+        <p>CI/CD pipeline with Jenkins, Docker, Terraform, Kubernetes, and Prometheus/Grafana.</p>
+        <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>HealthCareApp</h3>
+        <p>Cloud-native healthcare app with automated deployments and monitoring.</p>
+        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Insurance Portal</h3>
+        <p>End-to-end DevOps implementation using Ansible and Kubernetes.</p>
+        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
 
-<section class="journey">
-  <h2>My DevOps Journey</h2>
-  <p>
-    Coming from a traditional IT and scripting background, I transitioned into DevOps by mastering Git,
-    Jenkins, Docker, Kubernetes, Ansible, and AWS. Over time, I automated deployments, built CI/CD pipelines,
-    and integrated cloud-native solutions to streamline operations.
-  </p>
-  <p>
-    🔧 Experienced in provisioning infrastructure with Terraform, managing Kubernetes clusters on AWS (EKS),
-    setting up monitoring with Prometheus & Grafana, and delivering resilient microservices architectures.
-  </p>
-</section>
+  <section>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
+  </section>
 
-<section>
-  <h2>DevOps Tools</h2>
-  <div class="tools">
-    <a class="tool" href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i><p><strong>Git</strong><br>Version control</p></a>
-    <a class="tool" href="https://www.jenkins.io/" target="_blank"><i class="fas fa-code-branch"></i><p><strong>Jenkins</strong><br>CI/CD</p></a>
-    <a class="tool" href="https://www.docker.com/" target="_blank"><i class="fab fa-docker"></i><p><strong>Docker</strong><br>Containerization</p></a>
-    <a class="tool" href="https://kubernetes.io/" target="_blank"><i class="fas fa-project-diagram"></i><p><strong>Kubernetes</strong><br>Orchestration</p></a>
-    <a class="tool" href="https://www.ansible.com/" target="_blank"><i class="fas fa-cogs"></i><p><strong>Ansible</strong><br>Config Mgmt</p></a>
-    <a class="tool" href="https://www.terraform.io/" target="_blank"><i class="fas fa-code"></i><p><strong>Terraform</strong><br>Infra as Code</p></a>
-    <a class="tool" href="https://prometheus.io/" target="_blank"><i class="fas fa-chart-line"></i><p><strong>Prometheus</strong><br>Monitoring</p></a>
-    <a class="tool" href="https://grafana.com/" target="_blank"><i class="fas fa-tachometer-alt"></i><p><strong>Grafana</strong><br>Dashboarding</p></a>
-  </div>
-</section>
-
-<section class="projects">
-  <h2>My Projects</h2>
-  <div class="project-card">
-    <h3>FinanceMe - CI/CD Project</h3>
-    <p>Finance Domain Project using Jenkins, Docker, Terraform, Kubernetes, Prometheus & Grafana</p>
-    <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a>
-  </div>
-  <div class="project-card">
-    <h3>Healthcare DevOps Project</h3>
-    <p>Healthcare microservice app with full CI/CD pipeline, Ansible & Kubernetes on AWS</p>
-    <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
-  </div>
-  <div class="project-card">
-    <h3>Insurance Automation</h3>
-    <p>Cloud deployment of insurance application using Jenkins, Terraform, and Docker</p>
-    <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
-  </div>
-</section>
-
-<!-- Floating DevOps GIF at bottom right -->
-<img src="https://cdn.dribbble.com/users/2455953/screenshots/7052040/devops.gif" 
-     alt="DevOps" 
-     style="position: fixed; bottom: 20px; right: 20px; width: 90px; opacity: 0.9; z-index: 999; border-radius: 10px; box-shadow: 0 0 10px rgba(199,125,255,0.4);" />
-
-<footer>
-  <p>📧 abdulfaiyaz.shukor@gmail.com | 🌐 <a href="https://github.com/Faiyaz-Luck" target="_blank">GitHub Profile</a></p>
-</footer>
-
-<script>
-  function closePopup() {
-    document.getElementById("welcomePopup").style.display = "none";
-  }
-</script>
-
+  <footer>
+    <p>&copy; 2025 CloudWish. All rights reserved.</p>
+  </footer>
 </body>
 </html>
