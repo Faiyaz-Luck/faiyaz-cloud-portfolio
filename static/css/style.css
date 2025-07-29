@@ -212,6 +212,36 @@ footer {
   transition: 0.3s ease;
 }
 
+/* Project Icon + Title + Link Update */
+.project-card i {
+  font-size: 4rem;
+  color: #00ff90;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+.project-card h3 {
+  color: #00ff90;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.project-card p {
+  color: #ccffeb;
+  font-size: 1rem;
+}
+
+.project-card a {
+  color: #00ff90;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.project-card a:hover {
+  color: #00cc77;
+}
+
 /* Layout Grids */
 .tool-grid {
   display: flex;
