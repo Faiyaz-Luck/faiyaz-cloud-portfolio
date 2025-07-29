@@ -1,209 +1,184 @@
-body {
+/* Reset and base */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d0d0d;
-  color: #e0e0e0;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 40px 20px 20px;
-  background-color: #1a1a2e;
-  color: #c77dff;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #dcdcdc;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-h2 {
-  text-align: center;
-  color: #c77dff;
+  padding: 30px 20px;
+  background: linear-gradient(to right, #000000, #003300);
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 
-/* Project Cards Container */
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+header h1 {
+  font-size: 3em;
+  color: #00ff88;
+  margin-bottom: 10px;
 }
 
-/* Tools - Column Centered */
-.tools-container {
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #00ff88;
+  text-align: center;
+}
+
+/* DevOps Tools Section */
+.tools {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Individual tool card */
+.tool {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 25px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 0 15px #00ff88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.tool img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px #00ffcc);
+}
+
+.tool a {
+  text-decoration: none;
+  color: #a4ffef;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+/* Project Cards */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
-/* Tool & Project Cards */
-.project-card,
-.tool-card {
-  background-color: #1f1f1f;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(199, 125, 255, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-  width: 300px;
-}
-
-.project-card:hover,
-.tool-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(199, 125, 255, 0.4);
-}
-
-/* Image Styling */
-.project-card img,
-.tool-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  background-color: #ffffff1a;
-  border-radius: 14px;
-  margin-bottom: 12px;
-  padding: 10px;
-  box-shadow: 0 0 12px rgba(199, 125, 255, 0.5);
-  transition: transform 0.3s ease;
-}
-
-.project-card img:hover,
-.tool-card img:hover {
-  transform: scale(1.1);
-}
-
-/* Tool Texts */
-.tool-card h3 {
-  margin: 10px 0 5px;
-  color: #c77dff;
-  font-size: 1.4rem;
-}
-
-.tool-card p {
-  color: #aaa;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* Footer */
-footer {
-  text-align: center;
+.project-card {
+  background-color: #1a1a1a;
   padding: 20px;
-  background-color: #1a1a2e;
-  color: #c7c7c7;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-/* Welcome Popup */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 13, 13, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup-content {
-  background-color: #1a1a2e;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(199, 125, 255, 0.5);
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 10px #00ff88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  animation: fadeIn 0.5s ease-in-out;
 }
 
-.popup-content h2 {
-  margin-top: 0;
-  color: #c77dff;
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc;
 }
 
-.popup-content button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #c77dff;
-  border: none;
-  color: #1a1a2e;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #00ff88;
 }
 
-.popup-content button:hover {
-  background-color: #b366ff;
+.project-card a {
+  color: #a4ffef;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Floating DevOps GIF */
-.floating-gif {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
-  opacity: 0.9;
-  z-index: 999;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+/* Contact & Footer */
+.contact {
+  margin-top: 40px;
+  text-align: center;
+  color: #ccc;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .project-container,
+.contact p {
+  margin: 8px 0;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #0a0a0a;
+  text-align: center;
+  border-top: 1px solid #333;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .tools-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .tool-card,
-  .project-card {
-    width: 80%;
+  .projects {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
+/* Welcome Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #00ff88;
+  padding: 15px 30px;
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  z-index: 1000;
+  animation: fadeOut 5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
     opacity: 1;
-    transform: scale(1);
   }
-}
-
-/* Enlarged and Centered Font Awesome Icons in DevOps Tool Section */
-.tool-card i {
-  font-size: 7rem;
-  color: #3b82f6;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 120px;
-  text-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
-}
-
-.tool-card i:hover {
-  color: #c77dff;
-  transform: scale(1.2);
-  transition: 0.3s ease;
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
