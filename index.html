@@ -2,89 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CloudWish - DevOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CloudWish - Faiyaz's DevOps Portfolio</title>
   <link rel="stylesheet" href="static/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Inline style for popup */
+    .popup {
+      display: flex;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background-color: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 25px #c77dff;
+      max-width: 90%;
+    }
+
+    .popup-content button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #c77dff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      cursor: pointer;
+    }
+
+    .popup-content button:hover {
+      background-color: #e0aaff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1><i class="fas fa-cloud"></i> CloudWish</h1>
-    <p>Your DevOps Journey Portfolio</p>
-  </header>
 
-  <section class="intro">
-    <h2>Welcome to My Portfolio</h2>
-    <p>This portfolio highlights my journey and projects in DevOps, including CI/CD, cloud deployments, infrastructure as code, and monitoring.</p>
-  </section>
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <img src="https://i.pinimg.com/originals/1a/ae/48/1aae4807d8ddf61b41515a585e7b2490.gif" 
+           alt="DevOps Infinity Loop" 
+           style="max-width: 100%; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 15px #c77dff;" />
+      <h2 style="color: #c77dff;">Welcome to CloudWish - Faiyaz's DevOps Portfolio!</h2>
+      <p>Explore my DevOps journey, tools, and real-world projects 🚀</p>
+      <button onclick="closePopup()">Enter</button>
+    </div>
+  </div>
 
-  <section>
-    <h2>DevOps Tools</h2>
+  <!-- DevOps Tools Section -->
+  <section class="tools-section">
+    <h1 style="text-align: center; color: white; margin-top: 50px;">🚀 DevOps Tools</h1>
     <div class="tools-container">
       <a class="tool-card" href="https://git-scm.com/" target="_blank">
         <i class="fab fa-git-alt"></i>
-        <p><strong>Git</strong><br>Version control</p>
+        <h3>Git</h3>
+      </a>
+      <a class="tool-card" href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
       </a>
       <a class="tool-card" href="https://www.jenkins.io/" target="_blank">
-        <i class="fas fa-code-branch"></i>
-        <p><strong>Jenkins</strong><br>CI/CD</p>
+        <i class="fas fa-cogs"></i>
+        <h3>Jenkins</h3>
       </a>
       <a class="tool-card" href="https://www.docker.com/" target="_blank">
         <i class="fab fa-docker"></i>
-        <p><strong>Docker</strong><br>Containerization</p>
+        <h3>Docker</h3>
       </a>
       <a class="tool-card" href="https://kubernetes.io/" target="_blank">
-        <i class="fas fa-project-diagram"></i>
-        <p><strong>Kubernetes</strong><br>Orchestration</p>
+        <i class="fas fa-network-wired"></i>
+        <h3>Kubernetes</h3>
       </a>
       <a class="tool-card" href="https://www.ansible.com/" target="_blank">
-        <i class="fas fa-cogs"></i>
-        <p><strong>Ansible</strong><br>Config Mgmt</p>
+        <i class="fas fa-tools"></i>
+        <h3>Ansible</h3>
       </a>
       <a class="tool-card" href="https://www.terraform.io/" target="_blank">
-        <i class="fas fa-code"></i>
-        <p><strong>Terraform</strong><br>Infra as Code</p>
+        <i class="fas fa-code-branch"></i>
+        <h3>Terraform</h3>
       </a>
       <a class="tool-card" href="https://prometheus.io/" target="_blank">
         <i class="fas fa-chart-line"></i>
-        <p><strong>Prometheus</strong><br>Monitoring</p>
+        <h3>Prometheus</h3>
       </a>
       <a class="tool-card" href="https://grafana.com/" target="_blank">
-        <i class="fas fa-tachometer-alt"></i>
-        <p><strong>Grafana</strong><br>Dashboarding</p>
+        <i class="fas fa-chart-pie"></i>
+        <h3>Grafana</h3>
       </a>
     </div>
   </section>
 
-  <section>
-    <h2>My Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>FinanceMe</h3>
-        <p>CI/CD pipeline with Jenkins, Docker, Terraform, Kubernetes, and Prometheus/Grafana.</p>
-        <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>HealthCareApp</h3>
-        <p>Cloud-native healthcare app with automated deployments and monitoring.</p>
-        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Insurance Portal</h3>
-        <p>End-to-end DevOps implementation using Ansible and Kubernetes.</p>
-        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
+  <!-- JavaScript for popup -->
+  <script>
+    function closePopup() {
+      document.getElementById("welcomePopup").style.display = "none";
+    }
 
-  <section>
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 CloudWish. All rights reserved.</p>
-  </footer>
+    // Optional: Auto-close after 10 seconds
+    // setTimeout(closePopup, 10000);
+  </script>
 </body>
 </html>
