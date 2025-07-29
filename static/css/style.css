@@ -259,7 +259,7 @@ footer {
   margin-top: 20px;
 }
 
-/* --------- FADE-IN EFFECT ADDED BELOW ---------- */
+/* --------- FADE-IN EFFECT --------- */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
