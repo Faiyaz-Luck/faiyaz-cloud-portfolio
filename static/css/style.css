@@ -26,11 +26,57 @@ body {
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #00ffff 40%, #c77dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px #00ffff66);
+}
+.cloud-logo {
+  display: inline-block;
+  margin-right: 14px;
+  animation: floatCloud 2.5s ease-in-out infinite alternate;
+}
+@keyframes floatCloud {
+  from { transform: translateY(0); }
+  to { transform: translateY(-12px); }
+}
+.headline-underline {
+  display: block;
+  margin: 8px auto 0 auto;
+  width: 120px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00ffff, #c77dff);
+  animation: underlineGlow 2s infinite alternate;
+}
+@keyframes underlineGlow {
+  from { box-shadow: 0 0 8px #00ffff88; }
+  to   { box-shadow: 0 0 16px #c77dffcc; }
 }
 .hero .subtitle {
+  position: relative;
+  color: #fffbe6;
+  overflow: hidden;
   font-size: 1.4rem;
-  color: #baffff;
   margin-top: 16px;
+}
+.hero .subtitle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 60%, #fffbe6cc 85%, transparent 95%);
+  animation: shineMove 3s linear infinite;
+}
+@keyframes shineMove {
+  to { left: 120%; }
 }
 
 /* Popup */
