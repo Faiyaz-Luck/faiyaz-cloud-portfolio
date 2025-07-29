@@ -104,6 +104,7 @@ footer {
   font-size: 14px;
 }
 
+/* Popup */
 .popup {
   position: fixed;
   top: 0;
@@ -129,6 +130,12 @@ footer {
 .popup-content h2 {
   margin-top: 0;
   color: #66fcf1;
+  font-size: 26px;
+}
+
+.popup-content p {
+  color: #d3d3d3;
+  font-size: 1.1rem;
 }
 
 .popup-content button {
@@ -144,8 +151,10 @@ footer {
 
 .popup-content button:hover {
   background-color: #4dd2cc;
+  box-shadow: 0 0 10px #4dd2cc;
 }
 
+/* Floating DevOps GIF */
 .floating-gif {
   position: fixed;
   bottom: 20px;
@@ -157,6 +166,7 @@ footer {
   box-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
 }
 
+/* Responsive */
 @media screen and (max-width: 768px) {
   .project-container,
   .tools-container {
@@ -170,6 +180,7 @@ footer {
   }
 }
 
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -181,6 +192,7 @@ footer {
   }
 }
 
+/* DevOps Tool Icon */
 .tool-card i {
   font-size: 7rem;
   color: #4dd2cc;
@@ -199,6 +211,7 @@ footer {
   transition: 0.3s ease;
 }
 
+/* Layout Grids */
 .tool-grid {
   display: flex;
   flex-wrap: wrap;
