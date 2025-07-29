@@ -179,3 +179,16 @@ footer {
     transform: scale(1);
   }
 }
+
+/* Enlarged Font Awesome Icons in DevOps Tool Section */
+.tools .tool i {
+  font-size: 2.5rem;
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+.tools .tool i:hover {
+  color: #c77dff;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
