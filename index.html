@@ -1,54 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CloudWish - Faiyaz's DevOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudWish - DevOps Portfolio</title>
   <link rel="stylesheet" href="static/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    /* Inline style for popup */
-    .popup {
-      display: flex;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.85);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .popup-content {
-      background-color: #1a1a1a;
-      padding: 40px;
-      border-radius: 12px;
-      text-align: center;
-      color: white;
-      box-shadow: 0 0 25px #c77dff;
-      max-width: 90%;
-    }
-
-    .popup-content button {
-      margin-top: 15px;
-      padding: 10px 25px;
-      font-size: 16px;
-      background-color: #c77dff;
-      border: none;
-      border-radius: 8px;
-      color: black;
-      cursor: pointer;
-    }
-
-    .popup-content button:hover {
-      background-color: #e0aaff;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body>
 
+<body>
   <!-- Welcome Popup -->
   <div id="welcomePopup" class="popup">
     <div class="popup-content">
@@ -61,57 +22,76 @@
     </div>
   </div>
 
-  <!-- DevOps Tools Section -->
-  <section class="tools-section">
-    <h1 style="text-align: center; color: white; margin-top: 50px;">🚀 DevOps Tools</h1>
-    <div class="tools-container">
-      <a class="tool-card" href="https://git-scm.com/" target="_blank">
-        <i class="fab fa-git-alt"></i>
-        <h3>Git</h3>
-      </a>
-      <a class="tool-card" href="https://github.com/" target="_blank">
-        <i class="fab fa-github"></i>
-        <h3>GitHub</h3>
-      </a>
-      <a class="tool-card" href="https://www.jenkins.io/" target="_blank">
-        <i class="fas fa-cogs"></i>
-        <h3>Jenkins</h3>
-      </a>
-      <a class="tool-card" href="https://www.docker.com/" target="_blank">
-        <i class="fab fa-docker"></i>
-        <h3>Docker</h3>
-      </a>
-      <a class="tool-card" href="https://kubernetes.io/" target="_blank">
-        <i class="fas fa-network-wired"></i>
-        <h3>Kubernetes</h3>
-      </a>
-      <a class="tool-card" href="https://www.ansible.com/" target="_blank">
-        <i class="fas fa-tools"></i>
-        <h3>Ansible</h3>
-      </a>
-      <a class="tool-card" href="https://www.terraform.io/" target="_blank">
-        <i class="fas fa-code-branch"></i>
-        <h3>Terraform</h3>
-      </a>
-      <a class="tool-card" href="https://prometheus.io/" target="_blank">
-        <i class="fas fa-chart-line"></i>
-        <h3>Prometheus</h3>
-      </a>
-      <a class="tool-card" href="https://grafana.com/" target="_blank">
-        <i class="fas fa-chart-pie"></i>
-        <h3>Grafana</h3>
-      </a>
+  <!-- Header -->
+  <header>
+    <h1><i class="fas fa-cloud"></i> CloudWish</h1>
+    <p>Your DevOps Journey by Faiyaz</p>
+  </header>
+
+  <!-- DevOps Journey -->
+  <section id="journey">
+    <h2>My DevOps Journey</h2>
+    <p>
+      Starting as a curious learner, I've mastered cloud platforms, CI/CD pipelines, containerization, automation, and monitoring. 
+      I transformed legacy apps into scalable, cloud-native systems. DevOps isn't just a skill—it's my passion.
+    </p>
+  </section>
+
+  <!-- DevOps Tools -->
+  <section id="tools">
+    <h2>Tools I Use</h2>
+    <div class="tool-grid">
+      <div class="tool-card"><i class="fab fa-aws"></i><h3>AWS</h3></div>
+      <div class="tool-card"><i class="fab fa-docker"></i><h3>Docker</h3></div>
+      <div class="tool-card"><i class="fas fa-network-wired"></i><h3>Kubernetes</h3></div>
+      <div class="tool-card"><i class="fas fa-code-branch"></i><h3>Git</h3></div>
+      <div class="tool-card"><i class="fab fa-jenkins"></i><h3>Jenkins</h3></div>
+      <div class="tool-card"><i class="fas fa-cogs"></i><h3>Ansible</h3></div>
+      <div class="tool-card"><i class="fas fa-cloud-upload-alt"></i><h3>Terraform</h3></div>
+      <div class="tool-card"><i class="fas fa-chart-line"></i><h3>Prometheus</h3></div>
+      <div class="tool-card"><i class="fas fa-eye"></i><h3>Grafana</h3></div>
     </div>
   </section>
 
-  <!-- JavaScript for popup -->
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Finance Project</h3>
+        <p>CI/CD for a banking system with Docker, Jenkins, Terraform, and Kubernetes.</p>
+        <a href="https://github.com/Faiyaz-Luck/Finance-project" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Healthcare Project</h3>
+        <p>Automated deployment pipeline with monitoring for a healthcare app.</p>
+        <a href="https://github.com/Faiyaz-Luck/healthcare-project" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Insurance Project</h3>
+        <p>DevOps pipeline for insurance domain using cloud-native tools.</p>
+        <a href="https://github.com/Faiyaz-Luck/insurance-project" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer>
+    <p>Contact: <a href="mailto:abdulfaiyaz.shukor@gmail.com">abdulfaiyaz.shukor@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Faiyaz-Luck" target="_blank">Faiyaz-Luck</a></p>
+  </footer>
+
   <script>
     function closePopup() {
       document.getElementById("welcomePopup").style.display = "none";
     }
 
-    // Optional: Auto-close after 10 seconds
-    // setTimeout(closePopup, 10000);
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("welcomePopup").style.display = "flex";
+      }, 500);
+    };
   </script>
 </body>
+
 </html>
