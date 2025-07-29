@@ -3,8 +3,8 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8fafd;
-  color: #23234b;
+  background: #111218;
+  color: #e7e7e7;
   font-size: 18px;
   line-height: 1.7;
   min-height: 100vh;
@@ -16,8 +16,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #00ffff 0%, #2d0b5a 100%);
-  color: #fff;
+  background: linear-gradient(120deg, #23234b 0%, #181826 100%);
+  color: #00ffff;
   text-align: center;
   box-shadow: 0 2px 24px #00ffff22;
   margin-bottom: 36px;
@@ -29,7 +29,7 @@ body {
 }
 .hero .subtitle {
   font-size: 1.4rem;
-  color: #fffbe6;
+  color: #baffff;
   margin-top: 16px;
 }
 
@@ -45,8 +45,8 @@ body {
   z-index: 9999;
 }
 .popup-content {
-  background: #fff;
-  color: #23234b;
+  background: #23234b;
+  color: #e7e7e7;
   border-radius: 12px;
   padding: 38px 28px 26px 28px;
   max-width: 340px;
@@ -59,12 +59,12 @@ body {
   to { opacity: 1; transform: scale(1);}
 }
 .popup-heading {
-  color: #2d0b5a;
+  color: #00ffff;
   margin-bottom: 12px;
 }
 .popup-content button {
   background: #00ffff;
-  color: #222;
+  color: #181826;
   border: none;
   padding: 10px 30px;
   border-radius: 6px;
@@ -94,7 +94,7 @@ main {
 section {
   margin: 48px 0 0 0;
   padding-bottom: 36px;
-  border-bottom: 1px solid #e0e6f7;
+  border-bottom: 1px solid #23234b;
   background: none;
 }
 section:last-of-type {
@@ -103,8 +103,8 @@ section:last-of-type {
 section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #00b7a8;
-  border-left: 5px solid #00b7a8;
+  color: #00ffff;
+  border-left: 5px solid #00ffff;
   padding-left: 12px;
   margin-bottom: 22px;
   background: none;
@@ -130,8 +130,8 @@ section h2 {
   justify-content: center;
 }
 .tool-card {
-  background: #fff;
-  color: #00b7a8;
+  background: #181826;
+  color: #00ffff;
   border-radius: 10px;
   padding: 24px 28px;
   text-align: center;
@@ -141,27 +141,28 @@ section h2 {
   box-shadow: 0 1px 10px #00ffff11;
   transition: transform 0.23s, box-shadow 0.23s, background 0.18s;
   margin-bottom: 14px;
+  border-left: 4px solid #00ffff;
 }
 .tool-card h3 {
   font-size: 1.08rem;
   margin-top: 12px;
-  color: #23234b;
+  color: #e7e7e7;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 .tool-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 8px 32px rgba(0,255,255,0.18), 0 2px 4px rgba(0,0,0,0.12);
-  background: #e3f9f7;
+  background: #23234b;
 }
 .tool-card a {
-  color: #00b7a8;
+  color: #00ffff;
   text-decoration: none;
   font-size: 2.2rem;
   transition: color 0.2s;
 }
 .tool-card a:hover {
-  color: #2d0b5a;
+  color: #c77dff;
 }
 
 /* Project Grid */
@@ -172,8 +173,8 @@ section h2 {
   justify-content: center;
 }
 .project-card {
-  background: #fff;
-  color: #23234b;
+  background: #181826;
+  color: #e7e7e7;
   border-radius: 10px;
   padding: 26px 32px;
   text-align: left;
@@ -184,26 +185,26 @@ section h2 {
   transition: transform 0.23s, box-shadow 0.23s;
   margin-bottom: 14px;
   position: relative;
-  border-left: 4px solid #00b7a8;
+  border-left: 4px solid #00ffff;
 }
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 8px 32px rgba(0,255,255,0.18), 0 2px 4px rgba(0,0,0,0.11);
-  background: #e3f9f7;
+  background: #23234b;
 }
 .project-card a {
-  color: #23234b;
+  color: #e7e7e7;
   text-decoration: none;
 }
 .project-card .project-icon {
   font-size: 2.2rem;
-  color: #00b7a8;
+  color: #00ffff;
   margin-bottom: 10px;
   display: block;
 }
 .project-link {
   font-size: 0.95rem;
-  color: #2d0b5a;
+  color: #c77dff;
   font-weight: 500;
   margin-top: 8px;
   display: inline-block;
@@ -212,8 +213,8 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #fff;
-  color: #23234b;
+  background: linear-gradient(90deg, #0a0a0a 60%, #181826 100%);
+  color: #bdbdbd;
   text-align: center;
   padding: 38px 16px 22px 16px;
   margin-top: 50px;
@@ -222,19 +223,19 @@ footer {
   box-shadow: 0 -2px 20px #00ffff22;
 }
 footer a {
-  color: #00b7a8;
+  color: #00ffff;
   text-decoration: none;
   transition: color 0.2s;
 }
 footer a:hover {
-  color: #2d0b5a;
+  color: #c77dff;
 }
 
 /* Button Styles */
 button,
 .resume-btn {
-  background: #00b7a8;
-  color: #fff;
+  background: #00ffff;
+  color: #181826;
   border: none;
   border-radius: 7px;
   padding: 10px 28px;
@@ -248,7 +249,7 @@ button,
 }
 button:hover,
 .resume-btn:hover {
-  background: #2d0b5a;
+  background: #c77dff;
   transform: scale(1.05);
   color: #fff;
 }
@@ -260,8 +261,8 @@ button:hover,
   bottom: 40px;
   right: 40px;
   z-index: 9999;
-  background: #00b7a8;
-  color: #fff;
+  background: #00ffff;
+  color: #181826;
   border: none;
   border-radius: 50%;
   width: 48px;
@@ -272,18 +273,19 @@ button:hover,
   transition: background 0.3s, transform 0.2s;
 }
 #topBtn:hover {
-  background: #2d0b5a;
+  background: #c77dff;
+  color: #fff;
   transform: scale(1.11);
 }
 
 /* Links */
 a {
-  color: #00b7a8;
+  color: #00ffff;
   text-decoration: none;
   transition: color 0.18s;
 }
 a:hover {
-  color: #2d0b5a;
+  color: #c77dff;
   text-decoration: underline;
 }
 
@@ -305,9 +307,10 @@ a:hover {
   footer { font-size: 0.95rem; padding: 24px 6px 12px 6px;}
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 9px;
-  background: #e0e6f7;
+  background: #181826;
 }
 ::-webkit-scrollbar-thumb {
   background: #00ffff44;
